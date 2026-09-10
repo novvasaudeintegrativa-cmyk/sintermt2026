@@ -1,0 +1,47 @@
+name: Verificar site
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  checar-assets:
+    name: Checar arquivos referenciados no index.html
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Verificar imagens, CSS e JS locais
+        run: |
+          set -euo pipefail
+          faltando=0
+
+          # Extrai valores de src="..." e href="..." do index.html,
+          # ignora URLs externas, âncoras e mailto/tel, remove query string.
+          refs=$(grep -oE '(src|href)="[^"]+"' index.html \
+            | sed -E 's/^(src|href)="//; s/"$//' \
+            | grep -vE '^(https?:|//|#|mailto:|tel:|data:)' \
+            | sed -E 's/\?.*$//' \
+            | sort -u)
+
+          echo "Referências locais encontradas:"
+          echo "$refs"
+          echo "-------------------------------------"
+
+          while IFS= read -r ref; do
+            [ -z "$ref" ] && continue
+            # caminhos que começam com / são relativos à raiz do site
+            caminho="${ref#/}"
+            if [ ! -f "$caminho" ]; then
+              echo "::error file=index.html::Arquivo referenciado não existe: $ref"
+              faltando=$((faltando + 1))
+            fi
+          done <<< "$refs"
+
+          if [ "$faltando" -gt 0 ]; then
+            echo "$faltando referência(s) quebrada(s)."
+            exit 1
+          fi
+          echo "Todos os arquivos referenciados existem."
