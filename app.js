@@ -17,7 +17,7 @@
     var ticker = document.querySelector('.ticker');
     var inner = document.querySelector('.ticker__inner');
     if (!ticker || !inner) return;
-    var UNIT_HTML = '<span>Vagas limitadas</span><span class="ticker__dot">•</span>';
+    var UNIT_HTML = '<span>Abril de 2027 · Sinop/MT</span><span class="ticker__dot">•</span>';
 
     function build() {
       inner.innerHTML = '<div class="ticker__group">' + UNIT_HTML + '</div>';
