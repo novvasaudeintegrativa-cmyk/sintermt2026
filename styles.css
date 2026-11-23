@@ -858,3 +858,20 @@ section { position: relative; }
   .hero h1.h1-linhas .ln { opacity: 1; transform: none; filter: none; animation: none; }
 }
 @media (min-width: 900px) { .hero h1.h1-linhas .ln { white-space: nowrap; } }
+
+/* ============================================================
+   H2-BEBAS — todos os titulos de secao em Bebas Neue, caixa alta
+   ============================================================ */
+h2, .sec-head h2, .final h2 {
+  font-family: "Bebas Neue", Impact, "Arial Narrow", sans-serif !important;
+  font-weight: 400 !important;
+  text-transform: uppercase;
+  letter-spacing: .012em !important;
+  line-height: .98 !important;
+  font-size: clamp(44px, 6vw, 88px) !important;
+  text-wrap: balance;
+}
+.final h2 { max-width: 20ch; }
+@media (max-width: 640px) {
+  h2, .sec-head h2, .final h2 { font-size: clamp(38px, 11.5vw, 54px) !important; }
+}
