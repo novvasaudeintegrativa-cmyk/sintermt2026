@@ -834,7 +834,7 @@ section { position: relative; }
   font-family: "Bebas Neue", Impact, "Arial Narrow", sans-serif;
   font-weight: 400;
   text-transform: uppercase;
-  font-size: clamp(40px, 5.5vw, 80px);
+  font-size: clamp(40px, 5.2vw, 78px);
   letter-spacing: .012em;
   line-height: .96;
   max-width: none;
@@ -850,6 +850,7 @@ section { position: relative; }
 }
 .hero h1.h1-linhas .ln:nth-child(2) { animation-delay: .1s; }
 .hero h1.h1-linhas .ln:nth-child(3) { animation-delay: .2s; }
+.hero h1.h1-linhas .ln:nth-child(4) { animation-delay: .3s; }
 .hero h1.h1-linhas .ln.m { color: #fff; }
 .hero h1.h1-linhas .ln.g { color: var(--gold); }
 .hero h1.h1-linhas em { color: inherit; font-style: normal; }
