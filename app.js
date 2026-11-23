@@ -1,5 +1,5 @@
 /* ============================================================
-   2ª JORNADA SINTER — interações da LP
+   3ª JORNADA SINTER — interações da LP
    ============================================================ */
 (function () {
   'use strict';

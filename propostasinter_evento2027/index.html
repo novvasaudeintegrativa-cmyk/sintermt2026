@@ -924,10 +924,10 @@ body{background:var(--paper);color:#f4f1ea;font-size:18px;line-height:1.65;paddi
 @media(prefers-reduced-motion:reduce){.float{animation:none}}
 /* SINTERCAST-TITULO: SINTER + CAST em bloco verde, fonte do site */
 .pod-title{text-transform:uppercase;letter-spacing:-.02em;line-height:1;font-size:clamp(48px,6.6vw,96px)}
-.pod-title .neon,.panel.alt .pod-title .neon{background:#0a4d8f;color:#fff;border-radius:12px;padding:.02em .14em .06em;display:inline-block;margin-left:.03em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.pod-title .neon,.panel.alt .pod-title .neon{background:oklch(0.88 0.11 165);color:#043672;border-radius:12px;padding:.02em .14em .06em;display:inline-block;margin-left:.03em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
 /* TITULOS-BEBAS: fonte da referencia (Bebas Neue, caixa alta) no Sintercast e nas cotas */
 .pod-title,.detail .dn,.detail .dp b,.plan b,.plan .pr{font-family:"Bebas Neue",Impact,"Arial Narrow",sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:.01em;font-variant-numeric:normal}
-.pod-title{font-size:clamp(56px,7.4vw,112px);line-height:.9;letter-spacing:.005em;white-space:nowrap}
+.pod-title{font-size:clamp(60px,8.2vw,124px);line-height:.9;letter-spacing:.005em;white-space:nowrap}
 .pod-title .neon,.panel.alt .pod-title .neon{padding:0 .1em .02em;border-radius:14px;line-height:.9}
 .detail .dn{font-size:clamp(64px,7vw,96px);line-height:.88}
 .detail .dp b{font-size:clamp(44px,4.6vw,62px);line-height:1;letter-spacing:.02em}
@@ -970,6 +970,45 @@ body{background:var(--paper);color:#f4f1ea;font-size:18px;line-height:1.65;paddi
   .inc-grid{gap:12px!important}
   .drawer{padding:16px}
 }
+/* BEBAS-DESTAQUES: mesma fonte do "Diamond" em nomes de cota, precos, percentuais e numeros de destaque */
+.compare thead th,.compare tr.total td,.pay .big,.bigstat b,.goal b,.phase .when b,.insight .num,.steps li .n,.sp.new b,.huge a:not(.sm){font-family:"Bebas Neue",Impact,"Arial Narrow",sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:.02em;font-style:normal;font-variant-numeric:normal}
+.compare thead th{font-size:24px;line-height:1.1}
+.compare tr.total td{font-size:30px;line-height:1}
+.compare tr.total td:first-child{font-size:22px}
+.compare .tbd{font-style:normal}
+.compare tr.total td.tbd{font-size:26px}
+.pay .big{font-size:clamp(56px,6vw,84px);line-height:.9}
+.pay .big small{font-family:"Hanken Grotesk",system-ui,sans-serif;text-transform:none;letter-spacing:0;font-size:15px}
+.bigstat b{font-size:clamp(64px,7vw,92px);line-height:.9}
+.goal b{font-size:clamp(48px,5vw,68px);line-height:.95}
+.phase .when b{font-size:38px;line-height:1}
+.insight .num{font-size:22px}
+.steps li .n{font-size:26px}
+.sp.new b{font-size:24px}
+.huge{font-family:"Bebas Neue",Impact,sans-serif;font-weight:400;letter-spacing:.02em;font-size:clamp(44px,6.4vw,92px)}
+.huge .sm{font-family:"Hanken Grotesk",system-ui,sans-serif;letter-spacing:0;text-transform:none}
+/* FOTO-PARALAX: foto final em paralaxe, sombreada de azul; copyright na faixa azul */
+.final-img{overflow:hidden;height:clamp(260px,34vw,460px);margin-top:56px}
+.final-img img{position:absolute;left:0;top:-15%;width:100%;height:130%;object-fit:cover;object-position:center 40%;will-change:transform}
+.final-img::before{background:linear-gradient(180deg,var(--navy-900) 0%,rgba(2,28,57,.3) 32%,rgba(2,28,57,.38) 62%,var(--navy-900) 100%)}
+.panel.final{padding-bottom:0}
+.final-copy{position:relative;z-index:2;background:var(--navy-900);margin:0 calc(-1 * var(--gutter));padding:6px var(--gutter) 34px;text-align:center}
+.final-copy p{font-size:13.5px;font-weight:500;letter-spacing:.03em;color:rgba(255,255,255,.88)}
+/* TITULOS-H2-BEBAS: titulos de secao em Bebas Neue, caixa alta e maiores (mesma fonte do Diamond) */
+.h2{font-family:"Bebas Neue",Impact,"Arial Narrow",sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:.012em;line-height:.96;font-size:clamp(46px,6.6vw,96px);text-wrap:balance}
+.h2[style*="max-width"]{max-width:none!important}
+.crowd-main .h2{font-size:clamp(44px,5.4vw,80px)}
+.final .h2{font-size:clamp(52px,7.4vw,108px);max-width:18ch!important}
+@media(max-width:640px){.h2{font-size:clamp(40px,12vw,56px)}}
+/* FAQ-VERDE: accordion com fundo verde claro */
+.panel.alt .faq details{background:oklch(0.94 0.055 165);border:1px solid oklch(0.84 0.09 165);color:#043672;transition:background .25s ease,border-color .25s ease}
+.panel.alt .faq details[open]{background:oklch(0.90 0.085 165);border-color:oklch(0.76 0.11 165)}
+.panel.alt .faq summary{color:#043672}
+.panel.alt .faq details p{color:rgba(4,54,114,.78)}
+/* FOTO-DUOTOM: foto final dessaturada com multiply em azul escuro */
+.final-img img{filter:saturate(.18) contrast(1.08) brightness(1.05)}
+.final-img::after{content:"";position:absolute;inset:0;background:#1456a0;mix-blend-mode:multiply;z-index:1;pointer-events:none}
+.final-img::before{z-index:2;background:linear-gradient(180deg,var(--navy-900) 0%,rgba(2,28,57,.12) 34%,rgba(2,28,57,.2) 64%,var(--navy-900) 100%)}
 @media(max-width:900px){body{padding:0}.panel{border-radius:0;margin:0}}
 @media(max-width:640px){.panel{padding:64px 20px}.hero{padding:112px 20px 56px}.nav{padding:12px 20px}.nav-cta{display:none!important}.nav-links{display:none}}
 </style>
@@ -1451,7 +1490,7 @@ body{background:var(--paper);color:#f4f1ea;font-size:18px;line-height:1.65;paddi
         <span class="tag">Vocês falam</span>
         <h2 class="h2" style="margin-top:22px">O que ficou <span class="hl">depois</span> <span class="m">da Jornada.</span></h2>
       </div>
-      <p class="p">Mensagens e comentários reais de quem participou da 2ª edição. Role o mouse sobre os prints ou arraste para o lado para ver mais.</p>
+      <p class="p">Mensagens e comentários reais de quem participou da 2ª edição. Role a página e os prints passam para o lado. Também dá para arrastar.</p>
     </div>
     <!-- PRINTS: para acrescentar prints do WhatsApp, coloque as imagens em img/whatsapp/ e liste no array WHATSAPP_PRINTS no fim da pagina -->
     <div class="car-wrap">
@@ -1621,8 +1660,10 @@ body{background:var(--paper);color:#f4f1ea;font-size:18px;line-height:1.65;paddi
       </nav>
     </div>
   </div>
-  <div class="final-img">
+  <div class="final-img" data-parallax>
     <img src="img/pub_3858.jpg" alt="Plateia da 2ª Jornada assistindo à palestra" loading="lazy">
+  </div>
+  <div class="final-copy">
     <p>© 2027 SINTER-MT · Sindicato dos Terapeutas do Estado de Mato Grosso</p>
   </div>
 </section>
@@ -1812,26 +1853,48 @@ var WHATSAPP_PRINTS = [];
     f.appendChild(i); track.insertBefore(f, track.firstChild);
   });
   document.querySelectorAll("[data-pr]").forEach(function(b){
-    b.addEventListener("click", function(){ var m=track.scrollWidth-track.clientWidth; target=Math.max(0,Math.min(m,track.scrollLeft+ +b.dataset.pr*track.clientWidth*.8)); if(!raf) raf=requestAnimationFrame(loop); });
+    b.addEventListener("click", function(){ track.scrollBy({left:+b.dataset.pr*track.clientWidth*.8, behavior:"smooth"}); });
   });
   var down=false, sx=0, sl=0, moved=false;
   track.addEventListener("pointerdown", function(e){ if(e.pointerType==="touch") return; down=true; moved=false; sx=e.clientX; sl=track.scrollLeft; track.classList.add("drag"); });
   window.addEventListener("pointermove", function(e){ if(!down) return; var dx=e.clientX-sx; if(Math.abs(dx)>3) moved=true; track.scrollLeft=sl-dx; });
   window.addEventListener("pointerup", function(){ if(!down) return; down=false; track.classList.remove("drag"); });
-  /* roda do mouse sobre o carrossel move os prints para o lado; nas pontas a pagina volta a rolar */
-  var target=track.scrollLeft, raf=0;
-  function loop(){ var d=target-track.scrollLeft; if(Math.abs(d)<.5){ track.scrollLeft=target; raf=0; return; } track.scrollLeft+=d*.18; raf=requestAnimationFrame(loop); }
-  track.addEventListener("scroll", function(){ if(!raf) target=track.scrollLeft; }, {passive:true});
-  track.addEventListener("wheel", function(e){
-    if(Math.abs(e.deltaX)>Math.abs(e.deltaY)) return;
+  /* rolagem da pagina move os prints para o lado (efeito ligado ao scroll); arrastar/setas/teclado pausam por um instante */
+  var lastI=0, ticking=false;
+  function touch(){ lastI=Date.now(); }
+  track.addEventListener("pointerdown", touch);
+  track.addEventListener("keydown", touch);
+  document.querySelectorAll("[data-pr]").forEach(function(b){ b.addEventListener("click", touch); });
+  function sync(){
+    ticking=false;
+    if(Date.now()-lastI<1800) return;
     var max=track.scrollWidth-track.clientWidth; if(max<=0) return;
-    var cur=raf?target:track.scrollLeft;
-    if((e.deltaY<0 && cur<=0) || (e.deltaY>0 && cur>=max-1)) return;
-    e.preventDefault();
-    target=Math.max(0,Math.min(max,cur+e.deltaY*(e.deltaMode===1?32:1.1)));
-    if(!raf) raf=requestAnimationFrame(loop);
-  }, {passive:false});
+    var r=track.getBoundingClientRect(), vh=window.innerHeight||document.documentElement.clientHeight;
+    var start=vh*.92, end=vh*.12;               /* topo do carrossel: de 92% a 12% da tela */
+    var p=Math.max(0,Math.min(1,(start-r.top)/(start-end)));
+    track.scrollLeft=p*max;
+  }
+  function onScroll(){ sync(); }
+  window.addEventListener("scroll", onScroll, {passive:true});
+  window.addEventListener("resize", onScroll);
+  sync();
   track.addEventListener("keydown", function(e){ if(e.key==="ArrowRight") track.scrollBy({left:track.clientWidth*.6,behavior:"smooth"}); if(e.key==="ArrowLeft") track.scrollBy({left:-track.clientWidth*.6,behavior:"smooth"}); });
+})();
+</script>
+<script>
+/* FOTO-PARALAX: a foto se move mais devagar que a pagina */
+(function(){
+  var box=document.querySelector("[data-parallax]"); if(!box) return;
+  var img=box.querySelector("img"); if(!img) return;
+  if(window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  function upd(){
+    var r=box.getBoundingClientRect(), vh=window.innerHeight||document.documentElement.clientHeight;
+    if(r.bottom<0||r.top>vh) return;
+    var c=r.top+r.height/2, lim=r.height*.14;
+    var y=Math.max(-lim,Math.min(lim,-(c-vh/2)*.22));
+    img.style.transform="translate3d(0,"+y.toFixed(1)+"px,0)";
+  }
+  window.addEventListener("scroll",upd,{passive:true}); window.addEventListener("resize",upd); upd();
 })();
 </script>
 </body>
