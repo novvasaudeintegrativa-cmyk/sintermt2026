@@ -1,0 +1,9 @@
+# Arquivos de design pesados (nao versionar)
+*.psd
+*.psb
+*.ai
+*.pdf
+Font/
+Imgs/
+Referencias/
+Videos/

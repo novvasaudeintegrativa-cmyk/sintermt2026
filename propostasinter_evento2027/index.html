@@ -1,0 +1,1420 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Seja patrocinador | 3ª Jornada de Práticas Integrativas em Saúde de MT | SINTER-MT</title>
+<meta name="description" content="Proposta comercial da 3ª Jornada de Práticas Integrativas em Saúde de Mato Grosso. Coloque sua marca diante dos profissionais que indicam saúde para milhares de pacientes.">
+<meta property="og:title" content="Seja patrocinador da 3ª Jornada de Práticas Integrativas em Saúde de MT">
+<meta property="og:description" content="Sua marca diante de quem indica saúde para milhares de pacientes. Conheça as cotas.">
+<meta name="theme-color" content="#043672">
+<link rel="icon" type="image/png" href="img/embed_1.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=Spline+Sans+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#021c39;
+  --panel:#043672;
+  --panel-2:#0b3f78;
+  --white:#ffffff;
+  --soft:#e9e4d8;
+  --ink:#021c39;
+  --blue:#5aa2ff;
+  --neon:oklch(0.80 0.135 165);
+  --dim:rgba(255,255,255,.48);
+  --dim-ink:rgba(2,28,57,.42);
+  --line:rgba(255,255,255,.14);
+  --line-ink:rgba(2,28,57,.14);
+  --r-xl:40px; --r-lg:28px; --r-md:22px; --r-pill:999px;
+  --sans:"Hanken Grotesk",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --display:"Hanken Grotesk",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{overflow-x:hidden;scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--white);font-family:var(--sans);font-size:16px;line-height:1.6;padding:10px 10px calc(10px + env(safe-area-inset-bottom,0px));overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+strong{font-weight:600}
+:focus-visible{outline:2px solid var(--neon);outline-offset:3px;border-radius:12px}
+.neon{color:var(--neon)}
+
+/* ---------- panels ---------- */
+.panel{position:relative;border-radius:var(--r-xl);overflow:hidden;margin-bottom:10px;padding:clamp(56px,8vw,110px) clamp(22px,5vw,72px)}
+.panel.dark{background:var(--panel)}
+.panel.deep{background:var(--bg);border:1px solid var(--line)}
+.panel.light{background:#f4f1ea;color:var(--ink)}
+.panel.soft{background:var(--soft);color:var(--ink)}
+.panel.neon-bg{background:var(--neon);color:var(--ink)}
+.inner{max-width:1180px;margin:0 auto;position:relative;z-index:2}
+.row{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+
+/* ---------- type ---------- */
+.h1,.h2,.h3{font-weight:600;letter-spacing:-.035em;line-height:1.04}
+.h1{font-size:clamp(42px,6.6vw,94px)}
+.h2{font-size:clamp(36px,5.2vw,70px)}
+.h3{font-size:clamp(26px,2.8vw,36px);letter-spacing:-.03em}
+.m{color:var(--dim)}
+.light .m,.soft .m,.neon-bg .m{color:var(--dim-ink)}
+.p{font-size:clamp(15px,1.25vw,17px);color:var(--dim);max-width:56ch;line-height:1.65}
+.light .p,.soft .p{color:rgba(2,28,57,.62)}
+.p strong{color:var(--white)}
+.light .p strong,.soft .p strong{color:var(--ink)}
+.light h1 .neon,.light h2 .neon,.light h3 .neon,.soft h2 .neon{color:var(--ink);background:var(--neon);border-radius:14px;padding:0 .14em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.light .feat div{background:var(--soft)}
+.light .feat span{color:rgba(2,28,57,.6)}
+.light .feat .ic{color:var(--ink)}
+.place-info{color:#fff}
+.light .place-info .neon{background:none;color:var(--neon);padding:0}
+.light .place-info .p{color:var(--dim)}
+.light .place-info .tag{border-color:var(--line);color:rgba(255,255,255,.75)}
+.widget{color:#fff}
+.light .case .cc.w{background:var(--soft)}
+.case .cc.d{color:#fff}
+.light .case .cc.d .tag{border-color:var(--line);color:rgba(255,255,255,.75)}
+.light .case .cc.d .m{color:var(--dim)}
+.light .case .cc.n .tag{border-color:rgba(2,28,57,.25)}
+.spc-new .tag{align-self:flex-start}
+.light .steps li{background:var(--soft)}
+.cb-fact{color:var(--ink)}
+.hl{background:var(--neon);color:var(--ink);border-radius:18px;padding:0 .18em;box-decoration-break:clone;-webkit-box-decoration-break:clone;display:inline-block;transform:rotate(-1.5deg);line-height:1.12}
+
+/* ---------- pills / tags ---------- */
+.tag{font-family:"Spline Sans Mono",ui-monospace,monospace;text-transform:uppercase;letter-spacing:.12em;display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:var(--r-pill);padding:8px 18px;font-size:12.5px;font-weight:500;letter-spacing:.02em;color:rgba(255,255,255,.75)}
+.light .tag,.soft .tag{border-color:var(--line-ink);color:rgba(2,28,57,.7)}
+.tag.fill{background:rgba(255,255,255,.08);border-color:transparent}
+.light .tag.fill,.soft .tag.fill{background:var(--soft)}
+.tag.neon-t{white-space:nowrap;background:var(--neon);color:var(--ink);border-color:var(--neon)}
+.tag .dot{width:7px;height:7px;border-radius:50%;background:var(--blue)}
+
+/* ---------- icons ---------- */
+.ic{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;flex:none}
+
+/* ---------- buttons ---------- */
+.btn{display:inline-flex;align-items:center;gap:14px;border-radius:var(--r-pill);padding:6px 6px 6px 26px;font-weight:600;font-size:13.5px;text-transform:uppercase;letter-spacing:.06em;min-height:58px;cursor:pointer;border:0;font-family:var(--sans);transition:transform .2s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn .arr{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;flex:none;transition:transform .25s ease}
+.btn:hover .arr{transform:rotate(-45deg)}
+.btn .arr .ic{width:20px;height:20px;stroke-width:1.8}
+.btn-neon{background:var(--neon);color:var(--ink)}
+.btn-neon .arr{background:var(--ink);color:var(--neon)}
+.btn-white{background:var(--white);color:var(--ink)}
+.btn-white .arr{background:var(--ink);color:var(--white)}
+.btn-ink{background:var(--ink);color:var(--white)}
+.btn-ink .arr{background:var(--white);color:var(--ink)}
+.btn-line{background:transparent;color:var(--white);border:1px solid var(--line);padding:6px 24px}
+.btn-line .ic{width:18px;height:18px}
+
+.round{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:var(--white);color:var(--ink);flex:none}
+.round .ic{width:20px;height:20px}
+
+/* ---------- glass ---------- */
+.glass{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.32);backdrop-filter:blur(16px) saturate(140%);-webkit-backdrop-filter:blur(16px) saturate(140%)}
+.widget{background:rgba(2,28,57,.86);border:1px solid var(--line);border-radius:22px;padding:14px 18px;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 24px 60px -20px rgba(2,28,57,.6)}
+.widget small{display:block;color:var(--dim);font-size:12px;line-height:1.3}
+.widget b{display:block;font-weight:600;font-size:15px;line-height:1.35}
+
+/* ---------- HERO ---------- */
+.hero{min-height:calc(100svh - 20px);padding:0;display:flex;flex-direction:column}
+.hero .bg{position:absolute;inset:0}
+.hero .bg img{width:100%;height:100%;object-fit:cover;object-position:center 70%}
+.hero .bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(2,28,57,.55) 0%,rgba(2,28,57,.25) 30%,rgba(2,28,57,.85) 70%,var(--bg) 100%)}
+.nav{position:relative;z-index:3;display:flex;justify-content:space-between;align-items:center;padding:22px clamp(18px,3vw,34px)}
+.brand{display:flex;align-items:center;gap:12px;font-weight:600;letter-spacing:-.01em;font-size:17px}
+.brand img{width:42px;height:42px;object-fit:contain}
+.nav-links{display:flex;gap:6px}
+.nav-links a{font-size:13.5px;padding:10px 16px;border-radius:var(--r-pill);color:rgba(255,255,255,.8)}
+.nav-links a:hover{background:rgba(255,255,255,.1)}
+.nav .btn{min-height:48px;padding:4px 4px 4px 20px;font-size:14px}
+.nav .btn .arr{width:40px;height:40px}
+.hero-body{position:relative;z-index:2;margin-top:auto;padding:0 clamp(22px,5vw,72px) clamp(36px,5vw,64px)}
+.hero-tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px}
+.hero .tag{color:#fff;border-color:rgba(255,255,255,.35)}
+.hero h1{max-width:13ch}
+.hero h1 .ln{display:block;opacity:0;transform:translateY(22px);animation:rise .9s cubic-bezier(.2,.7,.2,1) forwards}
+.hero h1 .ln:nth-child(2){animation-delay:.1s}
+.hero h1 .ln:nth-child(3){animation-delay:.2s}
+.hero-foot{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;margin-top:34px;opacity:0;animation:fade .8s .45s forwards}
+.hero-foot p{font-size:clamp(16px,1.6vw,20px);max-width:30ch;color:rgba(255,255,255,.85);line-height:1.5}
+.hero-foot p strong{color:var(--neon)}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.hero-widgets{position:absolute;right:clamp(22px,5vw,72px);top:110px;z-index:2;display:grid;gap:12px;width:250px;opacity:0;animation:fade .8s .6s forwards}
+.hero-widgets .widget{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.mini-pill{font-size:11.5px;font-weight:600;background:var(--neon);color:var(--ink);border-radius:var(--r-pill);padding:4px 10px;white-space:nowrap}
+.bar{height:5px;border-radius:5px;background:rgba(255,255,255,.12);margin-top:10px;overflow:hidden}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--blue),var(--neon));border-radius:5px}
+@keyframes rise{to{opacity:1;transform:none;filter:blur(0)}}
+.hero h1 .ln{filter:blur(14px)}
+.reveal{opacity:0;filter:blur(16px);transform:translateY(14px);transition:opacity .9s ease,filter .9s ease,transform .9s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;filter:blur(0);transform:none}
+@keyframes fade{to{opacity:1}}
+
+/* ---------- DOR ---------- */
+.pain{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:46px}
+.pain-card{border-radius:var(--r-lg);padding:30px}
+.pain-card.bad{background:var(--panel-2)}
+.pain-card.good{background:var(--neon);color:var(--ink)}
+.pain-card ul{list-style:none;display:grid;gap:14px;margin-top:24px}
+.pain-card li{display:flex;gap:12px;font-size:clamp(15px,1.4vw,17px);font-weight:500;line-height:1.4;letter-spacing:-.01em}
+.pain-card.bad li{color:rgba(255,255,255,.75)}
+.pain-card.bad .ic{color:#ff6b6b}
+.pain-card li .ic{width:20px;height:20px;margin-top:2px}
+.wants{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:10px}
+.wants div{border:1px solid var(--line);border-radius:var(--r-pill);padding:16px 22px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.wants .ic{color:var(--blue)}
+.wants b{font-weight:600;font-size:15.5px}
+.wants span{color:var(--dim);font-size:13.5px}
+@media (max-width:900px){.pain,.wants{grid-template-columns:1fr}.wants div{border-radius:var(--r-md)}}
+
+/* ---------- STATS (estilo pesquisa) ---------- */
+.research{display:grid;grid-template-columns:.95fr 1.05fr;gap:clamp(30px,5vw,80px);align-items:start}
+.bigstats{display:grid;grid-template-columns:1fr 1fr;gap:28px 20px;margin-top:40px}
+.bigstat b{display:block;font-weight:600;letter-spacing:-.04em;font-size:clamp(46px,5vw,64px);line-height:1;color:var(--neon)}
+.bigstat span{display:block;color:var(--dim);font-size:14px;line-height:1.45;margin-top:6px;max-width:24ch}
+.goal{margin-top:34px;background:var(--neon);color:var(--ink);border-radius:var(--r-lg);padding:22px 26px;display:grid;gap:2px}
+.goal small{font-size:12.5px;font-weight:500;opacity:.7}
+.goal b{font-weight:600;font-size:clamp(34px,4vw,48px);letter-spacing:-.04em;line-height:1.05}
+.goal>span{font-size:14px;opacity:.75}
+.insights{display:grid;gap:12px}
+.insight{background:var(--panel-2);border-radius:var(--r-lg);padding:26px 28px;position:relative}
+.insight .num{color:var(--blue);font-size:13px;font-weight:600}
+.insight h3{font-size:clamp(18px,1.8vw,22px);font-weight:600;letter-spacing:-.02em;line-height:1.3;margin:8px 0 8px;max-width:30ch}
+.insight p{color:var(--dim);font-size:14.5px;line-height:1.55;max-width:58ch}
+.insight .tag{position:absolute;top:22px;right:22px;padding:5px 12px;font-size:11.5px}
+.statement{margin-top:12px;background:var(--neon);color:var(--ink);border-radius:var(--r-pill);padding:18px 28px;font-weight:600;font-size:15.5px;line-height:1.4}
+
+/* ---------- PLATEIA ---------- */
+.crowd{display:grid;grid-template-columns:2fr 1fr;grid-template-rows:330px 330px;gap:10px}
+.crowd figure{position:relative;border-radius:var(--r-xl);overflow:hidden;margin:0}
+.crowd img{width:100%;height:100%;object-fit:cover}
+.crowd-main{grid-row:span 2}
+.crowd-main::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(2,28,57,.1) 30%,rgba(2,28,57,.85))}
+.crowd-main figcaption{position:absolute;left:clamp(20px,4vw,48px);right:20px;bottom:clamp(20px,4vw,44px);z-index:2;display:grid;gap:16px;justify-items:start}
+.crowd-main .h2{max-width:14ch}
+.crowd-side .tag{position:absolute;left:14px;bottom:14px;padding:5px 12px;font-size:11.5px;font-weight:600}
+@media (max-width:900px){.crowd{grid-template-columns:1fr 1fr;grid-template-rows:420px 220px}.crowd-main{grid-column:span 2;grid-row:auto}}
+
+/* ---------- MULTIPLICADOR (bolhas de vidro sobre foto) ---------- */
+.mult-head{text-align:center;max-width:820px;margin:0 auto}
+.mult-head .p{margin:18px auto 0}
+.mult-stage{position:relative;margin-top:50px;border-radius:var(--r-lg);overflow:hidden;min-height:560px}
+.mult-stage>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 60%}
+.mult-stage::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#fff 0%,rgba(255,255,255,.85) 18%,rgba(255,255,255,0) 52%);z-index:1}
+.mult-stage::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(2,28,57,.75),rgba(2,28,57,0) 45%);z-index:1}
+.bubbles{position:relative;z-index:2;display:flex;justify-content:center;align-items:flex-start;gap:clamp(10px,2vw,26px);padding:30px 16px 0}
+.bubble{width:clamp(180px,20vw,232px);aspect-ratio:1;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:26px;color:var(--ink)}
+.bubble.glass{background:rgba(255,255,255,.42);border-color:rgba(255,255,255,.7)}
+.bubble.tall{aspect-ratio:auto;height:clamp(250px,27vw,320px);border-radius:var(--r-pill);margin-top:-30px}
+.bubble small{font-size:11.5px;color:rgba(2,28,57,.55)}
+.bubble h3{font-weight:600;font-size:clamp(19px,1.9vw,24px);letter-spacing:-.025em;line-height:1.15;margin:4px 0 8px}
+.bubble p{font-size:12.5px;line-height:1.45;color:rgba(2,28,57,.7);max-width:20ch}
+.bubble.neon-b{background:var(--neon);border:0}
+.mult-caption{position:absolute;z-index:2;left:0;right:0;bottom:28px;text-align:center;color:#fff;font-size:14px;font-weight:500;padding:0 20px}
+
+/* ---------- PROBLEMA / SOLUÇÃO (estilo case) ---------- */
+.case{display:grid;grid-template-columns:1.1fr 1fr 1fr;grid-template-rows:auto auto;gap:10px;margin-top:46px}
+.case .photo{grid-row:span 2;border-radius:var(--r-lg);overflow:hidden;min-height:420px}
+.case .photo img{width:100%;height:100%;object-fit:cover}
+.case .cc{border-radius:var(--r-lg);padding:26px;display:flex;flex-direction:column;justify-content:space-between;gap:40px;min-height:230px}
+.case .cc.w{background:var(--white);color:var(--ink)}
+.case .cc.d{background:var(--panel-2)}
+.case .cc.n{background:var(--neon);color:var(--ink)}
+.case .cc .tag{align-self:flex-start}
+.case .cc.w .tag,.case .cc.n .tag{border-color:rgba(2,28,57,.22);color:rgba(2,28,57,.75)}
+.case .cc p{font-size:clamp(16px,1.5vw,19px);font-weight:500;letter-spacing:-.015em;line-height:1.35}
+.case .cc p .m{color:var(--dim-ink)}
+.case .cc.d p .m{color:var(--dim)}
+
+/* galeria com pills */
+.gallery{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:230px;gap:10px;margin-top:10px}
+.shot{position:relative;border-radius:var(--r-lg);overflow:hidden;background:var(--panel-2)}
+.shot img{width:100%;height:100%;object-fit:cover;transition:transform .8s ease}
+.shot:hover img{transform:scale(1.04)}
+.shot .tag{position:absolute;top:16px;left:16px;z-index:2;background:rgba(2,28,57,.45);border-color:rgba(255,255,255,.4);color:#fff;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.shot .cap{position:absolute;left:16px;right:16px;bottom:14px;z-index:2;font-size:14px;font-weight:500;line-height:1.35;color:#fff;max-width:30ch}
+.shot::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(2,28,57,0) 45%,rgba(2,28,57,.8));pointer-events:none}
+.gallery .shot .tag{top:auto;bottom:16px}
+.gallery .shot::after{background:linear-gradient(180deg,rgba(2,28,57,0) 60%,rgba(2,28,57,.6))}
+.g1{grid-column:span 7;grid-row:span 2}.g2{grid-column:span 5}.g3{grid-column:span 5}
+.g4,.g5,.g6{grid-column:span 4}.g7{grid-column:span 5}.g8{grid-column:span 7}
+.ph{position:absolute;inset:0;display:grid;place-items:center;background:radial-gradient(70% 80% at 30% 20%,rgba(82,217,166,.16),rgba(82,217,166,0) 60%),var(--panel-2)}
+.ph .ic{width:46px;height:46px;color:rgba(255,255,255,.4);stroke-width:1.3}
+.light .ph,.soft .ph{background:radial-gradient(70% 80% at 30% 20%,rgba(82,217,166,.35),rgba(82,217,166,0) 60%),#e7e7ec}
+.light .ph .ic,.soft .ph .ic{color:rgba(2,28,57,.3)}
+
+
+/* ---------- COFFEE BREAK ---------- */
+.car-wrap{position:relative;margin-top:46px}
+.cb-track{display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;padding-bottom:4px}
+.cb-track::-webkit-scrollbar{display:none}
+.cb-item{flex:none;height:400px;scroll-snap-align:start;margin:0}
+.cb-item.land{width:600px}.cb-item.port{width:280px}
+.cb-item .tag{position:absolute;left:14px;bottom:14px;top:auto!important;background:rgba(255,255,255,.22);border-color:rgba(255,255,255,.5);color:#fff;z-index:2}
+.cb-item::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(2,28,57,0) 60%,rgba(2,28,57,.55))}
+.car-nav{display:flex;gap:8px;justify-content:flex-end;margin-top:14px}
+.car-nav .round{border:0;cursor:pointer}
+@media (max-width:640px){.cb-item{height:300px}.cb-item.land{width:82vw}.cb-item.port{width:58vw}}
+.cb-grid{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:240px;gap:10px;margin-top:46px}
+.cb-grid .shot::after{background:linear-gradient(180deg,rgba(2,28,57,0) 60%,rgba(2,28,57,.55))}
+.cb-grid .shot .tag{background:rgba(255,255,255,.22);border-color:rgba(255,255,255,.5)}
+.c1{grid-column:span 8;grid-row:span 2}.c2{grid-column:span 4;grid-row:span 2}
+.c3{grid-column:span 5}.c4{grid-column:span 3}.c5{grid-column:span 4}
+.c6{grid-column:span 6}.c7{grid-column:span 3}.c8{grid-column:span 3}
+.cb-facts{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:10px}
+.cb-fact{background:var(--white);border-radius:var(--r-lg);padding:22px 24px;display:flex;gap:16px;align-items:center}
+.cb-fact .icb{width:48px;height:48px;border-radius:50%;background:var(--ink);color:var(--neon);display:grid;place-items:center;flex:none}
+.cb-fact b{display:block;font-weight:600;font-size:16px;letter-spacing:-.01em;line-height:1.3}
+.cb-fact span{font-size:13.5px;color:rgba(2,28,57,.6);line-height:1.45}
+.cb-fact.n{background:var(--neon)}
+.cb-fact.n .icb{background:var(--ink)}
+@media (max-width:900px){
+  .cb-grid{grid-auto-rows:190px}
+  .c1{grid-column:span 12}.c2{grid-column:span 6;grid-row:span 2}.c3,.c4{grid-column:span 6}.c5{grid-column:span 12}
+  .c6{grid-column:span 12}.c7,.c8{grid-column:span 6;grid-row:span 2}
+  .cb-facts{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  .cb-grid{grid-auto-rows:160px}
+  .c1{grid-row:span 2}
+}
+
+/* ---------- SINTERCAST (estilo app) ---------- */
+.pod{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,80px);align-items:center}
+.phone-wrap{position:relative;display:flex;justify-content:center;padding:30px 0}
+.phone{width:min(320px,78vw);aspect-ratio:9/18.5;border-radius:48px;background:#050505;border:8px solid #2a2a2a;overflow:hidden;position:relative;box-shadow:0 40px 100px -30px rgba(2,28,57,.8)}
+.phone .screen{position:absolute;inset:0;padding:22px 18px;display:flex;flex-direction:column;gap:12px}
+.phone .status{display:flex;justify-content:space-between;font-size:11.5px;font-weight:600;color:#fff;padding:0 6px}
+.phone .hello small{display:block;color:var(--dim);font-size:11px;margin-top:12px}
+.phone .hello b{display:block;font-weight:600;font-size:26px;letter-spacing:-.03em;line-height:1.1}
+.phone .cover{border-radius:24px;overflow:hidden;position:relative;height:150px}
+.phone .cover .ph{background:radial-gradient(80% 90% at 30% 30%,rgba(82,217,166,.5),rgba(82,217,166,0) 65%),#0b3f78}
+.phone .cover .ic{color:rgba(255,255,255,.6)}
+.phone .ep{background:#0b3f78;border-radius:20px;padding:14px 16px;display:flex;justify-content:space-between;align-items:center;gap:10px}
+.phone .ep b{font-size:13.5px;font-weight:600;display:block;line-height:1.3}
+.phone .ep small{font-size:11px;color:var(--dim)}
+.phone .ep .play{width:36px;height:36px;border-radius:50%;background:var(--neon);color:var(--ink);display:grid;place-items:center;flex:none}
+.phone .ep .play .ic{width:15px;height:15px;fill:currentColor}
+.phone .list{display:grid;gap:2px;margin-top:2px}
+.phone .list div{display:flex;justify-content:space-between;padding:10px 4px;border-bottom:1px solid rgba(255,255,255,.07);font-size:12.5px}
+.phone .list div span{color:var(--dim);font-size:11px}
+.phone .list div.done{opacity:.4}
+.phone .tabbar{margin-top:auto;display:flex;justify-content:space-between;gap:6px}
+.phone .tabbar i{width:42px;height:42px;border-radius:50%;background:#1c1c1c;display:grid;place-items:center;color:rgba(255,255,255,.6)}
+.phone .tabbar i.on{background:#fff;color:var(--ink)}
+.phone .tabbar .ic{width:17px;height:17px}
+.phone .pv{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.pv-ui{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:space-between;padding:18px 16px;background:linear-gradient(180deg,rgba(2,20,45,.55) 0%,rgba(2,20,45,0) 22%,rgba(2,20,45,0) 65%,rgba(2,20,45,.8) 100%)}
+.pv-ui .status{display:flex;justify-content:space-between;font-size:11.5px;font-weight:600;color:#fff;padding:0 4px}
+.pv-ui .rec{display:inline-flex;align-items:center;gap:6px}
+.pv-ui .rec i{width:7px;height:7px;border-radius:50%;background:#ff5a6a;box-shadow:0 0 0 3px rgba(255,90,106,.3)}
+.pv-bottom{display:flex;justify-content:space-between;align-items:flex-end}
+.pv-bottom small{display:block;color:rgba(255,255,255,.7);font-size:11px}
+.pv-bottom b{display:block;font-family:var(--display);font-weight:400;font-size:34px;line-height:.9;color:#fff}
+.pv-sound{all:unset;cursor:pointer;width:42px;height:42px;border-radius:50%;background:var(--neon);color:var(--ink);display:grid;place-items:center}
+.pv-sound .ic{width:18px;height:18px}
+.pv-sound:focus-visible{outline:2px solid #fff;outline-offset:2px}
+.pod-shots{display:grid;grid-template-columns:1fr 1.4fr;gap:10px;margin-top:56px}
+.pod-shots .shot{min-height:360px}
+.pod-shots .shot .tag{position:absolute;top:16px;left:16px;z-index:2;background:rgba(2,28,57,.45);border-color:rgba(255,255,255,.4);color:#fff;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.pod-shots .cap{position:absolute;left:16px;right:16px;bottom:14px;z-index:2;font-size:14px;font-weight:500;color:#fff;max-width:36ch}
+@media (max-width:640px){.pod-shots{grid-template-columns:1fr}.pod-shots .shot{min-height:260px}}
+.float{position:absolute;z-index:3}
+.f1{left:-10px;top:24%}.f2{right:-14px;top:48%}.f3{left:6px;bottom:14%}
+.pod-title{font-family:var(--display);font-size:clamp(80px,11vw,150px);line-height:.82;letter-spacing:.005em}
+.feat{display:grid;gap:10px;margin-top:30px}
+.feat div{display:flex;gap:16px;align-items:flex-start;background:var(--panel-2);border-radius:var(--r-md);padding:18px 20px}
+.feat .ic{color:var(--neon);margin-top:2px}
+.feat strong{display:block;font-weight:600;font-size:15.5px}
+.feat span{color:var(--dim);font-size:14px;line-height:1.5}
+
+/* ---------- BRINDES (estilo brand collateral) ---------- */
+.collat{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:46px}
+.collat .shot{min-height:340px}
+.collat .shot .tag{background:rgba(255,255,255,.12)}
+.collat-text{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,80px);align-items:end;margin-top:60px}
+.quote-card{background:var(--neon);color:var(--ink);border-radius:var(--r-lg);padding:28px 30px}
+.quote-card p{font-size:clamp(18px,1.8vw,22px);font-weight:500;letter-spacing:-.02em;line-height:1.38}
+.quote-card .who{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.quote-card .who img{width:46px;height:46px;border-radius:50%;object-fit:contain;background:var(--ink);padding:5px}
+.quote-card .who b{display:block;font-weight:600;font-size:15px;line-height:1.2}
+.quote-card .who span{font-size:12.5px;color:rgba(2,28,57,.6)}
+
+
+/* ---------- MARCAS EM EVIDÊNCIA ---------- */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-top:40px}
+.chip-f{all:unset;cursor:pointer;font-size:13.5px;font-weight:500;padding:10px 18px;border-radius:var(--r-pill);border:1px solid var(--line);color:rgba(255,255,255,.8);transition:background .2s ease,color .2s ease}
+.chip-f:hover{background:rgba(255,255,255,.08)}
+.chip-f:focus-visible{outline:2px solid var(--neon);outline-offset:2px}
+.chip-f[aria-pressed="true"]{background:var(--neon);color:var(--ink);border-color:var(--neon)}
+.sp-grid{columns:3 280px;column-gap:10px;margin-top:20px}
+.sp-item{break-inside:avoid;margin-bottom:10px;position:relative;border-radius:var(--r-lg);overflow:hidden;background:var(--panel-2)}
+.sp-item img{width:100%;display:block;transition:transform .8s ease}
+.sp-item:hover img{transform:scale(1.03)}
+.sp-item::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(2,28,57,0) 50%,rgba(2,28,57,.85));pointer-events:none}
+.sp-item figcaption{position:absolute;left:14px;right:14px;bottom:14px;z-index:2;display:grid;gap:8px;justify-items:start}
+.sp-item .tag{padding:5px 12px;font-size:11.5px;font-weight:600}
+.sp-item .cap2{font-size:13.5px;font-weight:500;line-height:1.35;color:#fff;max-width:32ch}
+.sp-item[hidden]{display:none}
+@media (max-width:640px){.sp-grid{columns:2;column-gap:8px}.sp-item{margin-bottom:8px;border-radius:20px}.sp-item .cap2{display:none}.sp-item figcaption{left:8px;right:8px;bottom:8px}.sp-item .tag{font-size:10.5px;padding:4px 9px}.filters{flex-wrap:nowrap;overflow-x:auto;padding-bottom:4px;margin-right:-22px}.chip-f{white-space:nowrap}}
+
+/* ---------- DEPOIMENTOS ---------- */
+.bigquote{display:grid;grid-template-columns:.35fr 1fr;gap:30px;align-items:start}
+.bigquote blockquote{font-weight:600;font-size:clamp(26px,3.5vw,48px);letter-spacing:-.035em;line-height:1.12;position:relative}
+.bigquote blockquote::before{content:"“";position:absolute;left:-.6em;top:-.05em;color:var(--dim)}
+.shorts{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(220px,280px);justify-content:safe center;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;margin-top:56px;padding-bottom:12px;scrollbar-width:thin;scrollbar-color:rgba(255,255,255,.2) transparent}
+.short{scroll-snap-align:start;position:relative;aspect-ratio:9/16;border-radius:var(--r-lg);overflow:hidden;background:var(--panel-2)}
+.short button{all:unset;position:absolute;inset:0;cursor:pointer}
+.short button img{width:100%;height:100%;object-fit:cover}
+.short .playb{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:62px;height:62px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.4);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.short .playb .ic{width:22px;height:22px;fill:#fff;color:#fff;margin-left:3px}
+.short video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;background:#000}
+.short .vplay{all:unset;position:absolute;inset:0;cursor:pointer;z-index:2}
+.short.playing .vplay{display:none}
+.short iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.short .ph span{position:absolute;bottom:18px;left:0;right:0;text-align:center;font-size:12.5px;color:var(--dim)}
+.cta-strip{margin-top:12px;background:var(--panel-2);border-radius:var(--r-pill);padding:10px 10px 10px 30px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.cta-strip p{font-weight:600;font-size:clamp(17px,1.8vw,21px);letter-spacing:-.02em}
+
+/* ---------- 3ª EDIÇÃO ---------- */
+.ed-head{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:end}
+.inc-grid{grid-template-columns:repeat(4,1fr)!important}
+.inc-grid .ed{min-height:220px;gap:30px}
+@media (max-width:900px){.inc-grid{grid-template-columns:1fr 1fr!important}}
+@media (max-width:640px){.inc-grid{grid-template-columns:1fr 1fr!important;gap:8px}.inc-grid .ed{min-height:0;padding:18px;gap:18px;border-radius:22px}.inc-grid .ed h3{font-size:15px}.inc-grid .ed p{font-size:12.5px}.inc-grid .icb{width:40px;height:40px}}
+.ed-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:46px}
+.ed{background:var(--soft);border-radius:var(--r-lg);padding:26px;display:flex;flex-direction:column;gap:46px;min-height:250px}
+.ed .top{display:flex;justify-content:space-between;align-items:center}
+.ed .icb{width:50px;height:50px;border-radius:50%;background:var(--ink);color:var(--neon);display:grid;place-items:center}
+.ed h3{font-weight:600;font-size:20px;letter-spacing:-.02em;line-height:1.25}
+.ed p{font-size:14.5px;color:rgba(2,28,57,.6);line-height:1.55;margin-top:6px}
+.ed.feature{background:var(--ink);color:#fff}
+.ed.feature p{color:var(--dim)}
+.ed.feature .icb{background:var(--neon);color:var(--ink)}
+
+/* ---------- ANTES / DURANTE / DEPOIS ---------- */
+.phases{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:46px}
+.phase{background:var(--panel-2);border-radius:var(--r-lg);padding:28px}
+.phase .when{display:flex;justify-content:space-between;align-items:center;margin-bottom:26px}
+.phase .when b{font-weight:600;font-size:30px;letter-spacing:-.03em}
+.phase:nth-child(2) .when b{color:var(--neon)}
+.phase:nth-child(1) .when b{color:var(--blue)}
+.phase h3{font-weight:600;font-size:17px;line-height:1.35;margin-bottom:16px;letter-spacing:-.01em}
+.phase ul{list-style:none;display:grid;gap:11px}
+.phase li{display:flex;gap:10px;color:var(--dim);font-size:14.5px;line-height:1.5}
+.phase li .ic{width:17px;height:17px;color:var(--neon);margin-top:3px}
+
+/* ---------- PÚBLICO ---------- */
+.aud{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,80px)}
+.needs{margin-top:30px}
+.needs .seg{display:flex;height:16px;border-radius:16px;overflow:hidden;gap:4px;margin-top:14px}
+.needs .seg i{border-radius:16px}
+.aud-tags{display:flex;flex-wrap:wrap;gap:8px;align-content:flex-start}
+.aud-tags span{background:var(--soft);border-radius:var(--r-pill);padding:11px 18px;font-size:14px;font-weight:500}
+.aud-tags span.k{background:var(--ink);color:#fff}
+.aud-tags span.n{background:var(--neon)}
+.aud-photos{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:40px}
+.aud-photos .shot{aspect-ratio:1}
+.aud-photos .shot::after{display:none}
+.aud-photos .shot .tag{background:var(--neon);color:var(--ink);border-color:var(--neon);position:absolute;left:10px;bottom:10px;top:auto;padding:4px 10px;font-size:11px;z-index:2}
+
+/* ---------- PALESTRANTES ---------- */
+.spk{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:46px}
+.sp{background:var(--panel-2);border-radius:var(--r-md);padding:20px 22px;display:flex;gap:14px;align-items:center}
+.sp .av{width:44px;height:44px;border-radius:50%;background:var(--bg);border:1px solid var(--line);display:grid;place-items:center;font-weight:600;font-size:14px;color:var(--neon);flex:none}
+.sp img.av{object-fit:cover;padding:0;border:2px solid var(--neon)}
+.stage-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:46px}
+.stage-strip .shot{aspect-ratio:3/4}
+.stage-strip figcaption{position:absolute;left:16px;right:16px;bottom:14px;z-index:2}
+.stage-strip figcaption b{display:block;font-weight:600;font-size:16px;color:#fff;line-height:1.25}
+.stage-strip figcaption span{display:block;font-size:12.5px;color:rgba(255,255,255,.75)}
+.stage-strip+.spk{margin-top:10px}
+@media (max-width:900px){.stage-strip{grid-template-columns:1fr 1fr}}
+.sp b{display:block;font-weight:600;font-size:15px;line-height:1.25;letter-spacing:-.01em}
+.sp span{display:block;color:var(--dim);font-size:13px;line-height:1.4;margin-top:2px}
+.sp.new{grid-column:span 4;background:var(--neon);color:var(--ink);justify-content:space-between;flex-wrap:wrap;border-radius:var(--r-pill);padding:16px 16px 16px 30px}
+.sp.new b{font-size:18px}
+.sp.new span{color:rgba(2,28,57,.6)}
+
+/* ---------- PALESTRANTES (cards com foto) ---------- */
+.spk-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:46px}
+.spc{aspect-ratio:3/4;margin:0}
+.spc figcaption{position:absolute;left:16px;right:16px;bottom:14px;z-index:2}
+.spc figcaption b{display:block;font-weight:600;font-size:16px;color:#fff;line-height:1.25}
+.spc figcaption span{display:block;font-size:12.5px;color:rgba(255,255,255,.75);line-height:1.4;margin-top:2px}
+.sp-ph{background:radial-gradient(80% 70% at 30% 25%,rgba(82,217,166,.22),rgba(82,217,166,0) 60%),var(--panel-2)}
+.sp-ph span{font-weight:600;font-size:40px;letter-spacing:-.02em;color:rgba(255,255,255,.18);margin-bottom:40px}
+.spc-new{aspect-ratio:3/4;border-radius:var(--r-lg);background:var(--neon);color:var(--ink);padding:22px;display:flex;flex-direction:column;justify-content:space-between}
+.spc-new b{display:block;font-weight:600;font-size:22px;letter-spacing:-.02em;line-height:1.15}
+.spc-new span{font-size:14px;color:rgba(2,28,57,.65)}
+@media (max-width:900px){.spk-grid{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:640px){.spk-grid{grid-template-columns:1fr 1fr;gap:8px}.spc figcaption b{font-size:14px}.spc figcaption span{font-size:11.5px}.spc-new b{font-size:18px}}
+
+/* ---------- COTAS (estilo plano: topo escuro, gaveta branca) ---------- */
+.plans-top{text-align:center;max-width:820px;margin:0 auto}
+.plans-top .p{margin:18px auto 0}
+.drawer{background:var(--white);color:var(--ink);border-radius:var(--r-xl);margin-top:50px;padding:clamp(18px,3vw,34px);display:grid;grid-template-columns:1fr 1.05fr;gap:clamp(16px,3vw,34px)}
+.drawer h3.cy{font-weight:600;font-size:clamp(26px,2.6vw,34px);letter-spacing:-.03em;margin:4px 6px 18px}
+.plan-list{display:grid;gap:8px;align-content:start}
+.plan{all:unset;box-sizing:border-box;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;background:var(--soft);border-radius:var(--r-md);padding:18px 22px;transition:background .2s ease}
+.plan:hover{background:#e8e8ee}
+.plan:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.plan b{display:block;font-weight:600;font-size:19px;letter-spacing:-.02em;line-height:1.2}
+.plan small{display:block;font-size:12.5px;color:rgba(2,28,57,.55);margin-top:2px}
+.plan .pr{font-weight:600;font-size:clamp(20px,2vw,26px);letter-spacing:-.03em;white-space:nowrap}
+.plan[aria-selected="true"]{background:var(--ink);color:#fff}
+.plan[aria-selected="true"] small{color:var(--dim)}
+.plan[aria-selected="true"] .pr{color:var(--neon)}
+.plan .badge{white-space:nowrap;display:inline-block;font-size:11px;font-weight:600;background:var(--neon);color:var(--ink);border-radius:var(--r-pill);padding:3px 10px;margin-left:8px;vertical-align:middle}
+.detail{background:var(--ink);color:#fff;border-radius:var(--r-lg);padding:clamp(24px,3vw,36px);display:flex;flex-direction:column;position:relative;overflow:hidden}
+.detail::before{content:"";position:absolute;width:340px;height:340px;border-radius:50%;background:var(--neon);filter:blur(120px);opacity:.18;right:-120px;top:-140px}
+.detail .dt{flex-wrap:wrap-reverse;display:flex;justify-content:space-between;align-items:flex-start;gap:12px;position:relative}
+.detail .dn{font-family:var(--display);font-size:clamp(56px,6vw,84px);line-height:.88;letter-spacing:.01em}
+.detail .dd{color:var(--dim);font-size:14.5px;margin-top:12px;max-width:44ch;position:relative}
+.detail ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:12px 20px;margin:26px 0 28px;position:relative}
+.detail li{display:flex;gap:10px;font-size:14px;line-height:1.45}
+.detail li .ic{width:17px;height:17px;color:var(--neon);margin-top:2px}
+.detail .dp{margin-top:auto;display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;position:relative;padding-top:22px;border-top:1px solid var(--line)}
+.detail .dp small{display:block;color:var(--dim);font-size:12px}
+.detail .dp b{font-weight:600;font-size:clamp(34px,3.6vw,46px);letter-spacing:-.04em;line-height:1;color:var(--neon)}
+.detail .soon b{color:var(--dim)}
+
+.compare-wrap{margin-top:10px;background:var(--white);color:var(--ink);border-radius:var(--r-xl);overflow-x:auto;padding:clamp(14px,2vw,24px)}
+table.compare{width:100%;min-width:820px;border-collapse:separate;border-spacing:0;font-size:14px}
+.compare caption{text-align:left;font-weight:600;font-size:clamp(22px,2.2vw,28px);letter-spacing:-.03em;padding:12px 14px 18px}
+.compare th,.compare td{padding:14px;text-align:center;border-bottom:1px solid var(--line-ink)}
+.compare th:first-child,.compare td:first-child{text-align:left;color:rgba(2,28,57,.6);font-weight:500}
+.compare thead th{font-weight:600;font-size:15px}
+.compare thead th.d{background:var(--ink);color:var(--neon);border-radius:18px 18px 0 0}
+.compare td.d{background:var(--ink);color:#fff;font-weight:500;border-bottom-color:rgba(255,255,255,.1)}
+.compare tr:last-child td.d{border-radius:0 0 18px 18px}
+.compare tr:last-child td{border-bottom:0}
+.compare .y{color:var(--ink);font-weight:600}
+.compare .no{color:rgba(2,28,57,.28)}
+.compare .tbd{color:rgba(2,28,57,.45);font-style:italic;font-size:13px}
+.compare tr.total td{font-weight:600;font-size:17px;letter-spacing:-.02em;color:var(--ink)}
+.compare tr.total td.d{color:var(--neon)}
+.compare tr.total td:first-child{font-size:14px}
+
+.extras{display:grid;grid-template-columns:1.2fr 1fr;gap:10px;margin-top:10px}
+.diamond-only{background:var(--neon);color:var(--ink);border-radius:var(--r-xl);padding:clamp(26px,3vw,40px)}
+.diamond-only h3{font-weight:600;font-size:clamp(26px,2.8vw,36px);letter-spacing:-.035em;line-height:1.08;max-width:18ch}
+.do-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:28px}
+.do-grid div{background:rgba(255,255,255,.55);border-radius:var(--r-md);padding:18px}
+.do-grid .ic{margin-bottom:12px}
+.do-grid strong{display:block;font-weight:600;font-size:15px}
+.do-grid span{font-size:13.5px;color:rgba(2,28,57,.7);line-height:1.45}
+.pay-col{display:grid;gap:10px}
+.pay{background:var(--panel-2);border-radius:var(--r-xl);padding:26px 28px}
+.pay .tag{margin-bottom:18px}
+.pay p{font-size:15px;line-height:1.7;color:var(--dim)}
+.pay p strong{color:#fff}
+.pay .big{font-weight:600;font-size:clamp(36px,4vw,52px);letter-spacing:-.04em;line-height:1;color:var(--neon)}
+.pay .big small{font-size:15px;color:var(--dim);letter-spacing:0;font-weight:500}
+.custom{background:var(--white);color:var(--ink);border-radius:var(--r-xl);padding:26px 28px;display:flex;flex-direction:column;gap:18px}
+.custom b{font-weight:600;font-size:22px;letter-spacing:-.025em;line-height:1.2}
+.custom p{font-size:14.5px;color:rgba(2,28,57,.6)}
+
+/* ---------- PRINTS ---------- */
+.prints{columns:2 340px;column-gap:12px;margin-top:46px}
+.print{break-inside:avoid;margin-bottom:12px;border-radius:var(--r-lg);overflow:hidden;position:relative;background:#fff;border:1px solid var(--line-ink);padding:18px 14px 10px;box-shadow:0 18px 40px -28px rgba(2,28,57,.35)}
+.print img{width:100%;display:block}
+
+.print .ph{position:relative;min-height:220px}
+.print .ph span{position:absolute;bottom:16px;left:0;right:0;text-align:center;font-size:12.5px;color:rgba(2,28,57,.45)}
+
+/* ---------- DIRETORIA ---------- */
+.team{display:grid;grid-template-columns:1fr 1fr;gap:10px;align-items:stretch}
+.team .photo{border-radius:var(--r-xl);overflow:hidden;min-height:520px;position:relative}
+.team .photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 75%}
+.team .txt{background:var(--white);color:var(--ink);border-radius:var(--r-xl);padding:clamp(28px,4vw,56px);display:flex;flex-direction:column;justify-content:space-between;gap:30px}
+.team .years{display:flex;gap:10px;flex-wrap:wrap}
+
+/* ---------- LOCAL / PASSOS ---------- */
+.place{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:46px}
+.place-info{background:var(--panel-2);border-radius:var(--r-lg);padding:30px;display:flex;flex-direction:column;justify-content:space-between;gap:40px}
+.place-info address{font-style:normal;color:var(--dim);display:flex;gap:10px;font-size:14.5px;line-height:1.5}
+.place-info address .ic{color:var(--neon);margin-top:2px}
+.steps{list-style:none;display:grid;gap:10px}
+.steps li{background:var(--white);color:var(--ink);border-radius:var(--r-pill);padding:10px 26px 10px 10px;display:flex;align-items:center;gap:18px}
+.steps li .n{width:54px;height:54px;border-radius:50%;background:var(--ink);color:var(--neon);display:grid;place-items:center;font-weight:600;font-size:18px;flex:none}
+.steps li:last-child .n{background:var(--neon);color:var(--ink)}
+.steps strong{display:block;font-weight:600;font-size:15.5px;line-height:1.3}
+.steps span{font-size:13.5px;color:rgba(2,28,57,.6)}
+
+/* ---------- FAQ ---------- */
+.faq{display:grid;gap:8px;margin-top:40px}
+.faq details{background:var(--soft);border-radius:var(--r-md)}
+.faq summary{list-style:none;cursor:pointer;padding:20px 22px 20px 26px;display:flex;justify-content:space-between;align-items:center;gap:16px;font-weight:600;font-size:16px;letter-spacing:-.01em}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary .round{width:40px;height:40px;background:var(--ink);color:#fff;transition:transform .25s ease}
+.faq details[open] summary .round{transform:rotate(45deg);background:var(--neon);color:var(--ink)}
+.faq details p{padding:0 26px 22px;color:rgba(2,28,57,.62);font-size:15px;max-width:68ch}
+.faq-wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(30px,5vw,80px)}
+
+/* ---------- FINAL ---------- */
+.final{padding-bottom:0;text-align:center}
+.final .h2{max-width:16ch;margin:0 auto}
+.final .p{margin:18px auto 0}
+.final .ctas{justify-content:center;margin-top:30px}
+.huge{margin-top:60px;text-align:center;font-weight:600;letter-spacing:-.035em;line-height:1.1;font-size:clamp(32px,4.6vw,60px)}
+.huge a{display:block;transition:color .2s ease}
+.huge a:hover{color:var(--neon)}
+.huge .sm{font-size:.42em;letter-spacing:-.01em;color:var(--dim);font-weight:500;margin-top:10px}
+.foot-links{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;margin-top:60px;padding-top:24px;border-top:1px solid var(--line)}
+.foot-links nav{display:flex;flex-wrap:wrap;gap:6px 22px;font-size:13px;color:var(--dim)}
+.foot-links nav a:hover{color:#fff}
+.final-img{position:relative;height:clamp(220px,30vw,380px);margin:50px calc(-1 * clamp(22px,5vw,72px)) 0}
+.final-img img{width:100%;height:100%;object-fit:cover;object-position:center 40%}
+.final-img::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,var(--panel) 0%,rgba(2,28,57,.35) 45%,rgba(2,28,57,.55) 100%);z-index:1}
+.final-img p{position:absolute;bottom:22px;left:0;right:0;z-index:2;font-size:12.5px;font-weight:500;letter-spacing:.04em;color:rgba(255,255,255,.8)}
+
+/* ---------- FAB ---------- */
+.fab{position:fixed;right:22px;bottom:calc(22px + env(safe-area-inset-bottom,0px));z-index:60;width:62px;height:62px;border-radius:50%;display:grid;place-items:center;background:var(--neon);color:var(--ink);box-shadow:0 14px 40px -8px rgba(82,217,166,.55);transition:transform .2s ease}
+.fab:hover{transform:scale(1.06)}
+.fab .ic{width:27px;height:27px}
+
+/* ---------- responsivo ---------- */
+@media (max-width:1100px){
+  .hero-widgets{display:none}
+  .spk{grid-template-columns:repeat(3,1fr)}
+  .sp.new{grid-column:span 3}
+  .nav-links{display:none}
+}
+@media (max-width:900px){
+  body{padding:6px}
+  .panel{border-radius:30px;margin-bottom:6px}
+  .research,.pod,.collat-text,.bigquote,.ed-head,.aud,.drawer,.extras,.team,.place,.faq-wrap{grid-template-columns:minmax(0,1fr)}
+  .case{grid-template-columns:1fr 1fr}
+  .case .photo{grid-column:span 2;grid-row:auto;min-height:300px}
+  .ed-grid,.phases{grid-template-columns:1fr 1fr}
+  .gallery{grid-auto-rows:190px}
+  .g1{grid-column:span 12}.g2,.g3,.g4,.g5{grid-column:span 6}.g6{grid-column:span 12}.g7,.g8{grid-column:span 6}
+  .bubbles{flex-direction:column;align-items:center}
+  .bubble.tall{margin-top:0;height:auto;aspect-ratio:1;border-radius:50%}
+  .mult-stage{min-height:0;padding-bottom:90px}
+  .mult-stage::before{background:linear-gradient(180deg,#fff 0%,rgba(255,255,255,.6) 40%,rgba(255,255,255,0) 75%)}
+  .phone-wrap{order:2}
+  .team .photo{min-height:360px}
+}
+@media (max-width:640px){
+  .nav-cta{display:none!important}
+  .case{grid-template-columns:1fr}
+  .case .photo{grid-column:auto}
+  .ed-grid,.phases{grid-template-columns:1fr}
+  .gallery{grid-auto-rows:170px}
+  .g1,.g2,.g3,.g4,.g5,.g6,.g7,.g8{grid-column:span 12}
+  .g1{grid-row:span 2}
+  .collat{grid-template-columns:1fr}
+  .collat .shot{min-height:240px}
+  .spk{grid-template-columns:1fr}
+  .sp.new{grid-column:auto;border-radius:var(--r-md)}
+  .detail ul{grid-template-columns:1fr}
+  .do-grid{grid-template-columns:1fr}
+  .cta-strip{border-radius:var(--r-lg);padding:20px}
+  .bigquote blockquote::before{position:static;display:block}
+  .float{display:none}
+  .drawer{padding:12px;border-radius:30px}
+  .detail .dd{max-width:none}
+  .btn{font-size:14.5px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-delay:0s!important;transition:none!important}
+  html{scroll-behavior:auto}
+  .hero h1 .ln,.hero-foot,.hero-widgets,.reveal{opacity:1;transform:none;filter:none}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path d="M3.5 20.5l1.3-4.2A8.5 8.5 0 1 1 8 19.3z"/><path d="M9 8.6c0 3.3 3 6.4 6.4 6.4l1.1-1.4-2-1-1 .9c-1.2-.5-2.3-1.6-2.9-2.9l.9-1-1-2z"/></symbol>
+    <symbol id="i-sound-off" viewBox="0 0 24 24"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z"/><path d="M16 9.5l5 5M21 9.5l-5 5"/></symbol>
+    <symbol id="i-sound-on" viewBox="0 0 24 24"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z"/><path d="M16 9a4.5 4.5 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M7 7l10 10M17 7L7 17"/></symbol>
+    <symbol id="i-arr" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 5v14M6 13l6 6 6-6"/></symbol>
+    <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="3"/><path d="M8 3v4M16 3v4M3.5 10h17"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M19 10.2c0 5.2-7 10.3-7 10.3s-7-5.1-7-10.3a7 7 0 0 1 14 0z"/><circle cx="12" cy="10" r="2.6"/></symbol>
+    <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21M8.5 21h7"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5.5v13a.8.8 0 0 0 1.2.7l10-6.5a.8.8 0 0 0 0-1.4l-10-6.5A.8.8 0 0 0 8 5.5z"/></symbol>
+    <symbol id="i-yt" viewBox="0 0 24 24"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10 9.3v5.4l4.6-2.7z"/></symbol>
+    <symbol id="i-cut" viewBox="0 0 24 24"><circle cx="6.5" cy="6.5" r="2.8"/><circle cx="6.5" cy="17.5" r="2.8"/><path d="M8.6 8.4L20 18M8.6 15.6L20 6"/></symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 8h14l-1 11.2a2 2 0 0 1-2 1.8H8a2 2 0 0 1-2-1.8z"/><path d="M9 10V6.5a3 3 0 0 1 6 0V10"/></symbol>
+    <symbol id="i-coffee" viewBox="0 0 24 24"><path d="M4.5 9h12v5.5a5 5 0 0 1-5 5h-2a5 5 0 0 1-5-5z"/><path d="M16.5 10.5h1.5a2.5 2.5 0 0 1 0 5h-1.6M8 3.5c0 1.2 1 1.3 1 2.5M12 3.5c0 1.2 1 1.3 1 2.5"/></symbol>
+    <symbol id="i-stage" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="11" rx="2.5"/><path d="M8 20h8M12 15v5"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3.8l2.5 5.1 5.6.8-4 3.9 1 5.6-5.1-2.7-5 2.7 1-5.6-4.1-3.9 5.6-.8z"/></symbol>
+    <symbol id="i-share" viewBox="0 0 24 24"><circle cx="17.5" cy="5.5" r="2.5"/><circle cx="6.5" cy="12" r="2.5"/><circle cx="17.5" cy="18.5" r="2.5"/><path d="M8.7 10.8l6.6-4M8.7 13.2l6.6 4"/></symbol>
+    <symbol id="i-store" viewBox="0 0 24 24"><path d="M4 9.5l1.5-5h13L20 9.5a2.7 2.7 0 0 1-5.3.4A2.7 2.7 0 0 1 12 12a2.7 2.7 0 0 1-2.7-2.1A2.7 2.7 0 0 1 4 9.5z"/><path d="M5.5 12v8h13v-8M10 20v-4.5h4V20"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.2 4.2L19 7"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-hotel" viewBox="0 0 24 24"><path d="M3.5 19.5v-12M3.5 15.5h17v4M20.5 15.5v-3a3 3 0 0 0-3-3h-6v6"/><circle cx="7.5" cy="12" r="2"/></symbol>
+    <symbol id="i-dinner" viewBox="0 0 24 24"><path d="M7 3.5v17M4.5 3.5v5a2.5 2.5 0 0 0 5 0v-5M17 20.5V3.5c-2 1.2-3 3.5-3 6.5v3.5h3"/></symbol>
+    <symbol id="i-mountain" viewBox="0 0 24 24"><path d="M2.5 19.5l7-11 4.5 7 2.5-3.5 5 7.5z"/></symbol>
+    <symbol id="i-speaker" viewBox="0 0 24 24"><circle cx="12" cy="7" r="3.5"/><path d="M5 20.5c.8-3.9 3.6-6 7-6s6.2 2.1 7 6"/></symbol>
+    <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="3.8"/><circle cx="17.2" cy="6.8" r=".6"/></symbol>
+    <symbol id="i-image" viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="15" rx="3"/><circle cx="9" cy="9.5" r="1.8"/><path d="M20.5 15.5l-4.5-4.5-8.5 8.5"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M20.5 12a8 8 0 0 1-11.7 7.1L4 20.5l1.4-4.6A8 8 0 1 1 20.5 12z"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="M4 10.5L12 4l8 6.5V19a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 4 19z"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7.2a4.3 4.3 0 0 1 7.5 2.6C19.5 15.4 12 20 12 20z"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.6-3.4 3.3-5.5 6.5-5.5s5.9 2.1 6.5 5.5"/><circle cx="17" cy="9" r="2.6"/><path d="M17 14c2.5 0 4.2 1.6 4.6 4.4"/></symbol>
+  </defs>
+</svg>
+
+<!-- 1. HERO -->
+<section class="panel hero" id="inicio">
+  <div class="bg">
+    <!-- Para vídeo no fundo, troque a <img> por: <video src="video.mp4" autoplay muted loop playsinline></video> -->
+    <img src="img/pub_3815.jpg" alt="Congressistas de braços para cima no auditório lotado da 2ª Jornada, em Cuiabá" fetchpriority="high">
+  </div>
+  <header class="nav">
+    <a class="brand" href="#inicio" aria-label="SINTER-MT, início"><img src="img/embed_2.png" alt="" width="42" height="42">SINTER-MT</a>
+    <nav class="nav-links" aria-label="Seções">
+      <a href="#inclui">Proposta</a>
+      <a href="#numeros">Números</a>
+      <a href="#experiencia">2ª Jornada</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#cotas">Cotas</a>
+    </nav>
+    <a class="btn btn-neon nav-cta" href="#cotas">Patrocinar<span class="arr"><svg class="ic"><use href="#i-arr"/></svg></span></a>
+  </header>
+
+  <div class="hero-widgets" aria-hidden="true">
+    <div class="widget"><div><small>Próxima edição</small><b>600 congressistas esperados</b></div><span class="mini-pill">3ª edição</span></div>
+    <div class="widget" style="display:block"><small>2ª edição</small><b>370 congressistas e 29 expositores</b><div class="bar"><i style="width:62%"></i></div></div>
+    <div class="widget"><div><small>Local</small><b>Centro de Eventos Pantanal</b></div></div>
+  </div>
+
+  <div class="hero-body">
+    <div class="hero-tags">
+      <span class="tag"><span class="dot"></span>Proposta comercial</span>
+      
+      <span class="tag">Abril de 2027</span>
+      <span class="tag">Cuiabá, MT</span>
+    </div>
+    <h1 class="h1">
+      <span class="ln">3ª Jornada de</span>
+      <span class="ln m" style="color:rgba(255,255,255,.62)">Práticas Integrativas em Saúde de</span>
+      <span class="ln neon">Mato Grosso.</span>
+    </h1>
+    <div class="hero-foot">
+      <p>Sua marca diante de quem <strong>indica saúde</strong> para milhares de pacientes.</p>
+      <div class="ctas">
+        <a class="btn btn-neon" data-wa="Olá! Quero ser patrocinador da 3ª Jornada de Práticas Integrativas em Saúde de MT." href="#">Quero patrocinar<span class="arr"><svg class="ic"><use href="#i-arr"/></svg></span></a>
+        <a class="btn btn-line" href="#cotas">Ver cotas<svg class="ic"><use href="#i-down"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. DOR E DESEJO -->
+<section class="panel dark" id="dor">
+  <div class="inner">
+    <div class="row" style="align-items:flex-end">
+      <div>
+        <span class="tag"><span class="dot"></span>Para marcas que querem resultado</span>
+        <h2 class="h2" style="margin-top:22px;max-width:16ch">Sua marca merece mais que <span class="m">um stand esquecido</span> <span class="neon">no canto.</span></h2>
+      </div>
+      <p class="p">Muita marca já investiu em evento e voltou com a sensação de dinheiro perdido: pouca gente no stand, nenhum apoio da organização e nenhuma venda depois. A Jornada foi pensada para o contrário.</p>
+    </div>
+    <div class="pain">
+      <div class="pain-card bad">
+        <span class="tag fill">O que costuma acontecer</span>
+        <ul>
+          <li><svg class="ic"><use href="#i-x"/></svg>Stand fora do fluxo, quase ninguém passa</li>
+          <li><svg class="ic"><use href="#i-x"/></svg>Público que só olha e não compra</li>
+          <li><svg class="ic"><use href="#i-x"/></svg>Organização que some depois da montagem</li>
+          <li><svg class="ic"><use href="#i-x"/></svg>Marca esquecida no dia seguinte</li>
+        </ul>
+      </div>
+      <div class="pain-card good">
+        <span class="tag" style="border-color:rgba(2,28,57,.25);color:var(--ink)">O que a Jornada entrega</span>
+        <ul>
+          <li><svg class="ic"><use href="#i-check"/></svg>Stand no fluxo dos participantes</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Profissionais da saúde que indicam e compram</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Equipe acompanhando do credenciamento ao último café</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Conteúdo e redes mantendo sua marca viva por meses</li>
+        </ul>
+      </div>
+    </div>
+    <div class="wants">
+      <div><svg class="ic"><use href="#i-star"/></svg><b>Visibilidade</b><span>diante de quem decide</span></div>
+      <div><svg class="ic"><use href="#i-heart"/></svg><b>Marca fortalecida</b><span>associada a referências da saúde</span></div>
+      <div><svg class="ic"><use href="#i-store"/></svg><b>Vendas e indicações</b><span>dentro e depois do evento</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. O QUE ESTÁ INCLUSO -->
+<section class="panel light" id="inclui">
+  <div class="inner">
+    <div class="ed-head">
+      <div>
+        <span class="tag">O que está incluso</span>
+        <h2 class="h2" style="margin-top:22px">Tudo que sua marca <span class="hl">ganha</span> <span class="m">na 3ª Jornada.</span></h2>
+      </div>
+      <p class="p">Um resumo rápido do que entra nas cotas de patrocínio. O que muda de uma cota para outra está detalhado mais abaixo.</p>
+    </div>
+    <div class="ed-grid inc-grid">
+      <div class="ed feature"><div class="top"><span class="icb"><svg class="ic"><use href="#i-store"/></svg></span></div><div><h3>Stand na área premium</h3><p>No fluxo dos participantes, com tamanho conforme a cota.</p></div></div>
+      <div class="ed"><div class="top"><span class="icb"><svg class="ic"><use href="#i-stage"/></svg></span></div><div><h3>Palestra no palco principal</h3><p>Sua marca falando direto com o auditório.</p></div></div>
+      <div class="ed"><div class="top"><span class="icb"><svg class="ic"><use href="#i-yt"/></svg></span></div><div><h3>Vídeo no telão</h3><p>Exibido nos intervalos mais disputados.</p></div></div>
+      <div class="ed"><div class="top"><span class="icb"><svg class="ic"><use href="#i-bag"/></svg></span></div><div><h3>Bolsa-brinde e backdrop</h3><p>Sua logo na mão de cada participante e em todas as fotos.</p></div></div>
+      <div class="ed"><div class="top"><span class="icb"><svg class="ic"><use href="#i-mic"/></svg></span></div><div><h3>Espaço no Sintercast</h3><p>Seus especialistas no podcast oficial do evento.</p></div></div>
+      <div class="ed"><div class="top"><span class="icb"><svg class="ic"><use href="#i-share"/></svg></span></div><div><h3>Divulgação completa</h3><p>Antes, durante e depois, nas redes do SINTER-MT.</p></div></div>
+      <div class="ed"><div class="top"><span class="icb"><svg class="ic"><use href="#i-dinner"/></svg></span></div><div><h3>Relacionamento</h3><p>Jantar com os mentores e experiências exclusivas.</p></div></div>
+      <div class="ed"><div class="top"><span class="icb"><svg class="ic"><use href="#i-cal"/></svg></span></div><div><h3>3 dias de evento</h3><p>No Centro de Eventos Pantanal, em Cuiabá.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. NÚMEROS + INSIGHTS -->
+<section class="panel deep" id="numeros">
+  <div class="inner research">
+    <div>
+      <span class="tag">O que a 2ª Jornada mostrou</span>
+      <h2 class="h2" style="margin-top:22px">Mato Grosso <span class="m">quer</span> <span class="neon">mais.</span></h2>
+      <p class="p" style="margin-top:18px">Em setembro de 2026, <strong>370 congressistas</strong> entre terapeutas, médicos, psicólogos e estudantes lotaram o auditório em Cuiabá. Para a 3ª edição, a estimativa é de <strong>600 congressistas</strong>.</p>
+            <div class="bigstats">
+        <div class="bigstat"><b data-count="370">370</b><span>congressistas presentes na 2ª edição</span></div>
+        <div class="bigstat"><b data-count="29">29</b><span>expositores na feira</span></div>
+        <div class="bigstat"><b data-count="26">26</b><span>palestrantes no palco</span></div>
+        <div class="bigstat"><b data-count="16">16</b><span>episódios do Sintercast gravados no evento</span></div>
+      </div>
+      <div class="goal"><small>Meta da 3ª edição</small><b><span data-count="600">600</span> congressistas</b><span>Quase o dobro da edição anterior.</span></div>
+    </div>
+    <div class="insights">
+      <article class="insight">
+        <span class="tag fill">Alcance</span>
+        <span class="num">01</span>
+        <h3>O público não é o consumidor final. É quem indica.</h3>
+        <p>Profissionais da saúde atendem pacientes todos os dias e influenciam o que eles usam, compram e confiam.</p>
+      </article>
+      <article class="insight">
+        <span class="tag fill">Duração</span>
+        <span class="num">02</span>
+        <h3>O evento dura dias. O conteúdo trabalha por meses.</h3>
+        <p>Podcast publicado semanalmente, cortes e fotos circulando nas redes muito depois do encerramento.</p>
+      </article>
+      <article class="insight">
+        <span class="tag fill">Experiência</span>
+        <span class="num">03</span>
+        <h3>Tudo assessorado, do credenciamento ao último café.</h3>
+        <p>Recepção, bolsa-brinde, coffee break, vivências e feira de expositores com fluxo constante de participantes.</p>
+      </article>
+      <p class="statement">A conclusão: patrocinar a Jornada é falar com quem leva a sua marca para dentro do consultório.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 3. MULTIPLICADOR -->
+<section class="panel light" id="multiplicador">
+  <div class="inner">
+    <div class="mult-head">
+      <img src="img/embed_3.png" alt="" width="40" height="40" style="width:40px;height:40px;margin:0 auto 18px;object-fit:contain">
+      <h2 class="h2">Uma marca, <span class="m">600 profissionais da saúde,</span> milhares de pacientes.</h2>
+      <p class="p">Quando um profissional da saúde conhece e aprova a sua marca, ele leva essa recomendação para dentro do consultório. Cada contato no evento vale por muitos.</p>
+    </div>
+    <div class="mult-stage">
+      <img src="img/pub_3059.jpg" alt="Auditório lotado durante a 2ª Jornada" loading="lazy" style="object-position:center 72%">
+      <div class="bubbles" role="list">
+        <div class="bubble glass" role="listitem"><small>Etapa 1</small><h3>Sua marca</h3><p>No palco, no stand, no telão, na bolsa e no podcast.</p></div>
+        <div class="bubble glass tall" role="listitem"><small>Etapa 2</small><h3>Profissionais da saúde</h3><p>Conhecem, testam e passam a confiar no que você oferece.</p></div>
+        <div class="bubble neon-b" role="listitem"><small>Etapa 3</small><h3>Milhares de pacientes</h3><p>Recebem a indicação de alguém em quem já confiam.</p></div>
+      </div>
+      <p class="mult-caption">Auditório da 2ª Jornada, setembro de 2026</p>
+    </div>
+  </div>
+</section>
+
+<!-- 9. ANTES / DURANTE / DEPOIS -->
+<section class="panel dark" id="visibilidade">
+  <div class="inner">
+    <span class="tag">Visibilidade que vai além do evento</span>
+    <h2 class="h2" style="margin-top:22px;max-width:18ch">Sua marca vista antes, durante <span class="m">e</span> <span class="neon">depois.</span></h2>
+    <div class="phases">
+      <div class="phase">
+        <div class="when"><b>Antes</b><span class="tag fill">Campanha</span></div>
+        <h3>Sua marca entra na campanha de divulgação</h3>
+        <ul>
+          <li><svg class="ic"><use href="#i-check"/></svg>Logo nos materiais oficiais e nas artes de divulgação</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Presença nas redes do SINTER-MT durante a captação de público</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Associação direta aos palestrantes anunciados</li>
+        </ul>
+      </div>
+      <div class="phase">
+        <div class="when"><b>Durante</b><span class="tag neon-t">Ao vivo</span></div>
+        <h3>Sua marca no centro da experiência</h3>
+        <ul>
+          <li><svg class="ic"><use href="#i-check"/></svg>Stand no fluxo dos participantes</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Logo no backdrop e na bolsa-brinde</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Vídeo no telão e palestra no palco principal, conforme a cota</li>
+        </ul>
+      </div>
+      <div class="phase">
+        <div class="when"><b>Depois</b><span class="tag fill">Por meses</span></div>
+        <h3>Sua marca continua circulando</h3>
+        <ul>
+          <li><svg class="ic"><use href="#i-check"/></svg>Episódios do Sintercast publicados semanalmente no YouTube</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Cortes e fotos do evento no Instagram @sinter.mt</li>
+          <li><svg class="ic"><use href="#i-check"/></svg>Relacionamento com profissionais da saúde de todo o estado</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 10. PÚBLICO -->
+<section class="panel light" id="publico">
+  <div class="inner aud">
+    <div>
+      <span class="tag">Quem você vai encontrar</span>
+      <h2 class="h2" style="margin-top:22px">Um público que decide, <span class="hl">indica</span> <span class="m">e compra.</span></h2>
+      <p class="p" style="margin-top:18px">Profissionais e estudantes da saúde que buscam ampliar a visão clínica, integrando ciência, inovação, tecnologia e abordagens naturais ao cuidado humano.</p>
+      <div class="aud-photos">
+        <figure class="shot"><img src="img/pub_3211.jpg" alt="Congressistas sorrindo na plateia" loading="lazy"><span class="tag neon-t">Felizes</span></figure>
+        <figure class="shot"><img src="img/pub_4074.jpg" alt="Congressista de olhos fechados durante uma prática" loading="lazy" style="object-position:center 25%"><span class="tag neon-t">Imersos</span></figure>
+        <figure class="shot"><img src="img/pub_3489.jpg" alt="Congressista sorrindo durante a palestra" loading="lazy" style="object-position:center 30%"><span class="tag neon-t">Animados</span></figure>
+        <figure class="shot"><img src="img/pub_3498.jpg" alt="Congressista atenta durante a palestra" loading="lazy" style="object-position:center 30%"><span class="tag neon-t">Atentos</span></figure>
+        <figure class="shot"><img src="img/pub_3866.jpg" alt="Palestrantes sentados entre o público" loading="lazy" style="object-position:center 40%"><span class="tag neon-t">Lado a lado</span></figure>
+        <figure class="shot"><img src="img/pub_4273.jpg" alt="Plateia com dezenas de congressistas" loading="lazy" style="object-position:center 75%"><span class="tag neon-t">Lotado</span></figure>
+      </div>
+    </div>
+    <div class="aud-tags">
+      <span class="k">Terapeutas integrativos</span><span class="n">Profissionais de PICs</span><span>Acupunturistas</span><span>Quiropraxistas</span><span class="k">Médicos</span><span>Enfermeiros</span><span>Farmacêuticos</span><span>Biomédicos</span><span>Nutricionistas</span><span class="k">Psicólogos</span><span>Fisioterapeutas</span><span>Fonoaudiólogos</span><span>Terapeutas ocupacionais</span><span>Educadores físicos</span><span>Dentistas</span><span>Esteticistas e cosmetólogos</span><span class="n">Estudantes e recém-formados</span><span>Gestores do setor wellness</span><span>Interessados em longevidade e saúde mental</span>
+    </div>
+  </div>
+</section>
+
+<!-- 2b. PLATEIA -->
+<section class="panel dark" id="plateia" style="padding:10px">
+  <div class="crowd">
+    <figure class="crowd-main"><img src="img/pub_3723.jpg" alt="Auditório da 2ª Jornada tomado por congressistas" loading="lazy" style="object-position:center 85%">
+      <figcaption>
+        <span class="tag" style="border-color:rgba(255,255,255,.4);color:#fff">370 congressistas na 2ª Jornada</span>
+        <h2 class="h2">Cadeiras <span class="neon">cheias.</span> <span style="color:rgba(255,255,255,.7)">Atenção total.</span></h2>
+      </figcaption>
+    </figure>
+    <figure class="crowd-side"><img src="img/pub_3362.jpg" alt="Congressistas atentos na plateia" loading="lazy" style="object-position:center 55%"><span class="tag neon-t">Do início ao fim</span></figure>
+    <figure class="crowd-side"><img src="img/pub_4125.jpg" alt="Congressistas saindo do anfiteatro com as bolsas do evento" loading="lazy" style="object-position:center 40%"><span class="tag neon-t">Fluxo constante</span></figure>
+  </div>
+</section>
+
+<!-- 4. COMO FOI (estilo case) -->
+<section class="panel light" id="experiencia">
+  <div class="inner">
+    <div class="row" style="align-items:flex-end">
+      <div>
+        <span class="tag">Setembro de 2026, Cuiabá</span>
+        <h2 class="h2" style="margin-top:22px;max-width:15ch">Como foi a <span class="neon">2ª Jornada.</span></h2>
+      </div>
+      <p class="p">Auditório cheio, palestrantes de referência, vivências práticas, feira de expositores e um podcast gravado ao vivo.</p>
+    </div>
+    <div class="case">
+      <div class="photo"><img src="img/pub_3616.jpg" alt="Palestrante ao microfone no palco da 2ª Jornada" loading="lazy" style="object-position:center 30%"></div>
+      <div class="cc w"><span class="tag">O desafio</span><p>Reunir o setor de práticas integrativas de MT <span class="m">em um só lugar, com conteúdo de alto nível e marcas presentes de verdade.</span></p></div>
+      <div class="cc d"><span class="tag">O resultado</span><p><span class="m">Público engajado,</span> marcas parceiras em contato direto com quem decide <span class="m">e conteúdo circulando semanas depois.</span></p></div>
+      <div class="cc d"><span class="tag">A assessoria</span><p>Credenciamento, bolsa-brinde, coffee break e equipe dedicada <span class="m">em cada etapa do evento.</span></p></div>
+      <div class="cc n"><span class="tag" style="border-color:rgba(2,28,57,.25)">O próximo passo</span><p>A 3ª edição chega maior: três dias, novo palco e mais espaço para a sua marca.</p></div>
+    </div>
+    <!-- FOTOS: troque os blocos .ph por <img src="..." alt="..."> -->
+    <div class="gallery">
+      <figure class="shot g1"><img src="img/pub_3823.jpg" alt="Plateia lotada assistindo à palestra sobre longevidade" loading="lazy" style="object-position:center 60%"><span class="tag">Palestras</span></figure>
+      <figure class="shot g2"><img src="img/br_2694.jpg" alt="Mesa de credenciamento com as bolsas douradas dos parceiros" loading="lazy"><span class="tag">Credenciamento e brindes</span></figure>
+      <figure class="shot g3"><img src="img/embed_4.jpg" alt="Palestrante com o painel de apoiadores no telão"><span class="tag">Apoiadores no telão</span></figure>
+      <figure class="shot g4"><img src="img/pod_0006.jpg" alt="Entrevista gravada na sala de podcast" loading="lazy" style="object-position:center 35%"><span class="tag">Sala de podcast</span></figure>
+      <figure class="shot g5"><img src="img/cb_breads.jpg" alt="Pães e salgados no coffee break da 2ª Jornada" loading="lazy"><span class="tag">Coffee break</span></figure>
+      <figure class="shot g6"><img src="img/pub_LAM.jpg" alt="Congressistas de pé, sorrindo durante uma dinâmica" loading="lazy"><span class="tag">Networking</span></figure>
+      <figure class="shot g7"><img src="img/pub_3809.jpg" alt="Participantes em vivência prática com as mãos na cabeça" loading="lazy" style="object-position:center 65%"><span class="tag">Vivências</span></figure>
+      <figure class="shot g8"><img src="img/pub_3790.jpg" alt="Congressistas de pé no auditório" loading="lazy" style="object-position:center 70%"><span class="tag">Presença</span></figure>
+    </div>
+  </div>
+</section>
+
+<!-- 4b. COFFEE BREAK -->
+<section class="panel dark" id="coffee">
+  <div class="inner">
+    <div class="row" style="align-items:flex-end">
+      <div>
+        <span class="tag">Dois dias de coffee break</span>
+        <h2 class="h2" style="margin-top:22px;max-width:14ch">Onde as <span class="hl">conversas</span> <span class="m">acontecem.</span></h2>
+      </div>
+      <p class="p">Entre uma palestra e outra, a mesa posta virou ponto de encontro. Montado junto à feira de expositores, o coffee break fez o público circular pelos stands e conversar com as marcas parceiras.</p>
+    </div>
+    <div class="car-wrap">
+    <div class="cb-track" id="cbTrack" tabindex="0" aria-label="Fotos do coffee break">
+      <figure class="shot cb-item land"><img src="img/cb_table.jpg" alt="Mesa do coffee break ao lado dos stands" loading="lazy"><span class="tag">Ao lado da feira</span></figure>
+      <figure class="shot cb-item port"><img src="img/cb_fruit.jpg" alt="Fruteira com uvas, morangos, maçãs e peras" loading="lazy"><span class="tag">Frutas frescas</span></figure>
+      <figure class="shot cb-item land"><img src="img/cb_sand.jpg" alt="Sanduíches naturais e pão de queijo" loading="lazy"><span class="tag">Salgados</span></figure>
+      <figure class="shot cb-item port"><img src="img/cb_choc.jpg" alt="Doces cobertos com chocolate" loading="lazy"><span class="tag">Doces</span></figure>
+      <figure class="shot cb-item land"><img src="img/cb_tarts.jpg" alt="Tortas e quiches decoradas com frutas" loading="lazy"><span class="tag">Tortas e quiches</span></figure>
+      <figure class="shot cb-item port"><img src="img/cb_brie.jpg" alt="Folhado com frutas vermelhas" loading="lazy"><span class="tag">Mesa posta</span></figure>
+      <figure class="shot cb-item land"><img src="img/cb_breads.jpg" alt="Pães e salgados assados" loading="lazy"><span class="tag">Pães</span></figure>
+      <figure class="shot cb-item port"><img src="img/cb_char.jpg" alt="Tábua de frios com queijos e uvas" loading="lazy"><span class="tag">Frios</span></figure>
+      <figure class="shot cb-item port"><img src="img/cb_quiche.jpg" alt="Quiche e tortinhas na mesa decorada" loading="lazy"><span class="tag">Quiches</span></figure>
+    </div>
+    <div class="car-nav">
+      <button type="button" class="round" data-dir="-1" aria-label="Fotos anteriores"><svg class="ic" style="transform:rotate(180deg)"><use href="#i-arr"/></svg></button>
+      <button type="button" class="round" data-dir="1" aria-label="Próximas fotos"><svg class="ic"><use href="#i-arr"/></svg></button>
+    </div>
+    </div>
+    <div class="cb-facts">
+      <div class="cb-fact"><span class="icb"><svg class="ic"><use href="#i-coffee"/></svg></span><div><b>Dois dias de serviço</b><span>Coffee break completo em toda a programação.</span></div></div>
+      <div class="cb-fact"><span class="icb"><svg class="ic"><use href="#i-users"/></svg></span><div><b>Público circulando</b><span>A mesa ficava junto aos stands das marcas parceiras.</span></div></div>
+      <div class="cb-fact n"><span class="icb"><svg class="ic"><use href="#i-store"/></svg></span><div><b>Sua marca por perto</b><span>Na 3ª edição, os stands ficam no fluxo dos participantes.</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. SINTERCAST -->
+<section class="panel light" id="sintercast">
+  <div class="inner pod">
+    <div class="phone-wrap">
+      <div class="phone">
+        <video class="pv" src="videos/podcast-takes.mp4" poster="videos/podcast-takes.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Bastidores das gravações do Sintercast na 2ª Jornada"></video>
+        <div class="pv-ui">
+          <div class="status"><span>19:00</span><span class="rec"><i></i>REC</span></div>
+          <div class="pv-bottom">
+            <div><small>Bastidores</small><b>Sintercast</b></div>
+            <button type="button" class="pv-sound" aria-label="Ativar som" aria-pressed="false"><svg class="ic"><use href="#i-sound-off"/></svg></button>
+          </div>
+        </div>
+      </div>
+      <div class="widget float f1"><small>Gravados no evento</small><b><span class="neon">16</span> episódios</b></div>
+      <div class="widget float f2"><small>Publicação</small><b>Toda quinta, 19h</b><div class="bar"><i style="width:62%"></i></div></div>
+      <div class="widget float f3"><small>Na 3ª edição</small><b>Espaço para marcas parceiras</b></div>
+    </div>
+    <div>
+      <span class="tag"><span class="dot" style="background:#ff5a6a"></span>Gravado ao vivo no evento</span>
+      <h2 class="pod-title" style="margin-top:24px">Sinter<span class="neon">cast</span></h2>
+      <p class="p" style="margin-top:20px">Na 2ª Jornada montamos uma sala exclusiva de podcast, como nos maiores congressos do país. O evento durou dois dias, mas o conteúdo segue no ar <strong>toda semana</strong>.</p>
+      <div class="feat">
+        <div><svg class="ic"><use href="#i-yt"/></svg><p><strong>16 episódios no YouTube</strong><span>Publicados toda quinta-feira, às 19h, no canal do SINTER-MT.</span></p></div>
+        <div><svg class="ic"><use href="#i-cut"/></svg><p><strong>Cortes nas redes</strong><span>Trechos curtos circulando no Instagram @sinter.mt por semanas.</span></p></div>
+        <div><svg class="ic"><use href="#i-mic"/></svg><p><strong>A sua marca no podcast</strong><span>Na 3ª edição, marcas parceiras e seus especialistas podem participar das gravações.</span></p></div>
+      </div>
+    </div>
+  </div>
+  <div class="inner pod-shots">
+    <figure class="shot"><img src="img/pod_0013.jpg" alt="Sandra Regina, presidente do SINTER-MT, na sala do podcast" loading="lazy" style="object-position:center 35%"><span class="tag">Sala exclusiva</span><figcaption class="cap">Conversas gravadas com calma, longe do barulho do evento.</figcaption></figure>
+    <figure class="shot"><img src="img/pod_0057.jpg" alt="Palestrante dando entrevista em frente ao backdrop dos parceiros" loading="lazy" style="object-position:center 40%"><span class="tag">Entrevistas no backdrop</span><figcaption class="cap">Cada entrevista gravada com as marcas parceiras ao fundo.</figcaption></figure>
+  </div>
+</section>
+
+<!-- 6. MARCAS EM EVIDÊNCIA -->
+<section class="panel dark" id="brindes">
+  <div class="inner">
+    <div class="row" style="align-items:flex-end">
+      <div>
+        <span class="tag">Patrocinadores na 2ª Jornada</span>
+        <h2 class="h2" style="margin-top:22px;max-width:15ch">Marcas que <span class="neon">apareceram</span> <span class="m">de verdade.</span></h2>
+      </div>
+      <p class="p">Na bolsa de cada participante, no backdrop das fotos, nos stands com demonstração ao vivo e no palco, nos sorteios. Cada foto abaixo mostra um benefício que a sua marca pode ter na 3ª edição.</p>
+    </div>
+    <div class="filters" role="toolbar" aria-label="Filtrar fotos">
+      <button type="button" class="chip-f" aria-pressed="true" data-f="all">Todas</button>
+      <button type="button" class="chip-f" aria-pressed="false" data-f="bolsa">Bolsa e brindes</button>
+      <button type="button" class="chip-f" aria-pressed="false" data-f="backdrop">Backdrop</button>
+      <button type="button" class="chip-f" aria-pressed="false" data-f="stand">Stands</button>
+      <button type="button" class="chip-f" aria-pressed="false" data-f="tec">Tecnologias</button>
+      <button type="button" class="chip-f" aria-pressed="false" data-f="palco">Palco e sorteios</button>
+    </div>
+    <div class="sp-grid" id="spGrid">
+      <figure class="sp-item" data-cat="bolsa"><img src="img/br_2694.jpg" alt="Bolsas douradas com as logos dos parceiros, prontas no credenciamento" loading="lazy"><figcaption><span class="tag neon-t">Logo na bolsa-brinde</span><span class="cap2">Bolsas douradas com as logos dos parceiros, prontas no credenciamento</span></figcaption></figure>
+      <figure class="sp-item" data-cat="bolsa"><img src="img/br_2944.jpg" alt="A bolsa oficial saiu do evento no ombro de cada participante" loading="lazy"><figcaption><span class="tag neon-t">Logo na bolsa-brinde</span><span class="cap2">A bolsa oficial saiu do evento no ombro de cada participante</span></figcaption></figure>
+      <figure class="sp-item" data-cat="bolsa"><img src="img/br_3792.jpg" alt="Kits da Tecno Vida com produto e vale bioimpedância" loading="lazy"><figcaption><span class="tag neon-t">Brinde da marca</span><span class="cap2">Kits da Tecno Vida com produto e vale bioimpedância</span></figcaption></figure>
+      <figure class="sp-item" data-cat="bolsa"><img src="img/br_3819.jpg" alt="Produto de marca parceira entregue como brinde" loading="lazy"><figcaption><span class="tag neon-t">Brinde da marca</span><span class="cap2">Produto de marca parceira entregue como brinde</span></figcaption></figure>
+      <figure class="sp-item" data-cat="bolsa"><img src="img/br_2815.jpg" alt="Recepção entregando as bolsas aos participantes" loading="lazy"><figcaption><span class="tag neon-t">Primeiro contato</span><span class="cap2">Recepção entregando as bolsas aos participantes</span></figcaption></figure>
+      <figure class="sp-item" data-cat="backdrop"><img src="img/pod_0057.jpg" alt="Entrevistas gravadas em frente ao backdrop dos parceiros" loading="lazy"><figcaption><span class="tag neon-t">Logo no backdrop</span><span class="cap2">Entrevistas gravadas em frente ao backdrop dos parceiros</span></figcaption></figure>
+      <figure class="sp-item" data-cat="backdrop"><img src="img/br_2940.jpg" alt="O backdrop dos parceiros virou o cenário das fotos do evento" loading="lazy"><figcaption><span class="tag neon-t">Logo no backdrop</span><span class="cap2">O backdrop dos parceiros virou o cenário das fotos do evento</span></figcaption></figure>
+      <figure class="sp-item" data-cat="stand"><img src="img/br_3263.jpg" alt="Stand da Reale Energya com a linha de produtos em destaque" loading="lazy"><figcaption><span class="tag neon-t">Stand na feira</span><span class="cap2">Stand da Reale Energya com a linha de produtos em destaque</span></figcaption></figure>
+      <figure class="sp-item" data-cat="stand"><img src="img/br_3247.jpg" alt="Diraízes e Real Max apresentando seus produtos" loading="lazy"><figcaption><span class="tag neon-t">Stand na feira</span><span class="cap2">Diraízes e Real Max apresentando seus produtos</span></figcaption></figure>
+      <figure class="sp-item" data-cat="tec"><img src="img/br_3375.jpg" alt="Demonstração ao vivo no stand da Água Kangen" loading="lazy"><figcaption><span class="tag neon-t">Experiência no stand</span><span class="cap2">Demonstração ao vivo no stand da Água Kangen</span></figcaption></figure>
+      <figure class="sp-item" data-cat="tec"><img src="img/br_3378.jpg" alt="Água Kangen servida para os participantes provarem" loading="lazy"><figcaption><span class="tag neon-t">Experiência no stand</span><span class="cap2">Água Kangen servida para os participantes provarem</span></figcaption></figure>
+      <figure class="sp-item" data-cat="tec"><img src="img/br_3383.jpg" alt="Tecnologia Prife testada pelos participantes" loading="lazy"><figcaption><span class="tag neon-t">Experiência no stand</span><span class="cap2">Tecnologia Prife testada pelos participantes</span></figcaption></figure>
+      <figure class="sp-item" data-cat="tec"><img src="img/br_3525.jpg" alt="Equipamento Prife em demonstração" loading="lazy"><figcaption><span class="tag neon-t">Experiência no stand</span><span class="cap2">Equipamento Prife em demonstração</span></figcaption></figure>
+      <figure class="sp-item" data-cat="tec"><img src="img/br_3522.jpg" alt="Participante experimentando a tecnologia no stand" loading="lazy"><figcaption><span class="tag neon-t">Experiência no stand</span><span class="cap2">Participante experimentando a tecnologia no stand</span></figcaption></figure>
+      <figure class="sp-item" data-cat="palco"><img src="img/br_3187.jpg" alt="Palestrantes recebem no palco os kits das marcas parceiras" loading="lazy"><figcaption><span class="tag neon-t">Marca no palco</span><span class="cap2">Palestrantes recebem no palco os kits das marcas parceiras</span></figcaption></figure>
+      <figure class="sp-item" data-cat="palco"><img src="img/br_3892.jpg" alt="Sorteio de prêmios Diraízes diante de todo o auditório" loading="lazy"><figcaption><span class="tag neon-t">Sorteio no palco</span><span class="cap2">Sorteio de prêmios Diraízes diante de todo o auditório</span></figcaption></figure>
+      <figure class="sp-item" data-cat="palco"><img src="img/br_3895.jpg" alt="Ganhadora do sorteio com o prêmio da marca parceira" loading="lazy"><figcaption><span class="tag neon-t">Sorteio no palco</span><span class="cap2">Ganhadora do sorteio com o prêmio da marca parceira</span></figcaption></figure>
+      <figure class="sp-item" data-cat="palco"><img src="img/br_3983.jpg" alt="Palestrante recebe certificado e kits dos parceiros" loading="lazy"><figcaption><span class="tag neon-t">Marca no palco</span><span class="cap2">Palestrante recebe certificado e kits dos parceiros</span></figcaption></figure>
+    </div>
+    <div class="cta-strip" style="margin-top:16px">
+      <p>Quer a <span class="neon">sua marca</span> nessas fotos?</p>
+      <a class="btn btn-neon" href="#cotas">Ver cotas<span class="arr"><svg class="ic"><use href="#i-down"/></svg></span></a>
+    </div>
+  </div>
+</section>
+
+<!-- 11. PALESTRANTES -->
+<section class="panel light" id="palestrantes">
+  <div class="inner">
+    <div class="row" style="align-items:flex-end">
+      <div>
+        <span class="tag">Quem já esteve conosco</span>
+        <h2 class="h2" style="margin-top:22px">Palco de <span class="neon">referências.</span></h2>
+      </div>
+      <p class="p">Foram <strong>26 palestrantes</strong> na 2ª Jornada, especialistas que inspiraram o público e geraram conteúdo de alto nível. Alguns deles abaixo. Na 3ª edição, esse time cresce.</p>
+    </div>
+    <div class="spk-grid">
+      <figure class="shot spc"><img src="img/spk_4257.jpg" alt="Dra. Verônica Meirelles na 2ª Jornada" loading="lazy" style="object-position:center 25%"><figcaption><b>Dra. Verônica Meirelles</b><span>Psicóloga e neuropsicóloga</span></figcaption></figure>
+      <figure class="shot spc"><img src="img/spk_3600.jpg" alt="Dr. Alex Alves na 2ª Jornada" loading="lazy" style="object-position:center 30%"><figcaption><b>Dr. Alex Alves</b><span>Palestrante e convidado do Sintercast</span></figcaption></figure>
+      <figure class="shot spc"><img src="img/spk_3460.jpg" alt="Prof. Anílson na 2ª Jornada" loading="lazy" style="object-position:center 30%"><figcaption><b>Prof. Anílson</b><span>Método THTC e dores crônicas</span></figcaption></figure>
+      <figure class="shot spc"><img src="img/spk_4343.jpg" alt="Alex Bill na 2ª Jornada" loading="lazy" style="object-position:center 22%"><figcaption><b>Alex Bill</b><span>Autor, palestrante e psicoterapeuta</span></figcaption></figure>
+      <figure class="shot spc"><img src="img/spk_3944.jpg" alt="Alexandre Gorzoni na 2ª Jornada" loading="lazy" style="object-position:center 20%"><figcaption><b>Alexandre Gorzoni</b><span>Comunicação e oratória</span></figcaption></figure>
+      <figure class="shot spc"><img src="img/spk_elias.jpg" alt="Dr. Elias Pereira na 2ª Jornada" loading="lazy" style="object-position:center 20%"><figcaption><b>Dr. Elias Pereira</b><span>Referência em oncologia integrativa</span></figcaption></figure>
+      <figure class="shot spc"><img src="img/spk_ricardo.jpg" alt="Ricardo Maciel na 2ª Jornada" loading="lazy" style="object-position:center 20%"><figcaption><b>Ricardo Maciel</b><span>Coordenador de PICs no SUS de Primavera do Leste</span></figcaption></figure>
+      <figure class="shot spc"><img src="img/spk_luis.jpg" alt="Luis Manoel na 2ª Jornada" loading="lazy" style="object-position:center 20%"><figcaption><b>Luis Manoel</b><span>Terapeuta integrativo, mais de 20 anos de experiência</span></figcaption></figure>
+      <figure class="shot spc"><img src="img/spk_adriana.jpg" alt="Dra. Adriana Bertocco na 2ª Jornada" loading="lazy" style="object-position:center 30%"><figcaption><b>Dra. Adriana Bertocco</b><span>Médica, palestrante, autora e mentora</span></figcaption></figure>
+      <figure class="shot spc"><img src="img/spk_peter.jpg" alt="Dr. Peter Lau na 2ª Jornada" loading="lazy" style="object-position:center 28%"><figcaption><b>Dr. Peter Lau</b><span>Medicina Tradicional Chinesa</span></figcaption></figure>
+      <figure class="shot spc"><img src="img/spk_rafael.jpg" alt="Dr. Rafael Navarrete na 2ª Jornada" loading="lazy" style="object-position:center 25%"><figcaption><b>Dr. Rafael Navarrete</b><span>Naturopata e homeopata</span></figcaption></figure>
+      <figure class="shot spc"><img src="img/spk_ana.jpg" alt="Dra. Ana Paula Ferro na 2ª Jornada" loading="lazy" style="object-position:center 25%"><figcaption><b>Dra. Ana Paula Ferro</b><span>Terapeuta sistêmica</span></figcaption></figure>
+      <figure class="shot spc"><img src="img/spk_isolda.jpg" alt="Isolda Risso na 2ª Jornada" loading="lazy" style="object-position:center 25%"><figcaption><b>Isolda Risso</b><span>Arte, emoções e autoconhecimento</span></figcaption></figure>
+      <!-- EDITAR: quando os nomes da 3ª Jornada forem confirmados, troque o texto abaixo -->
+      <div class="spc-new"><span class="tag" style="border-color:rgba(2,28,57,.25);color:var(--ink)">3ª Jornada</span><div><b>Novos palestrantes</b><span>Nomes em breve.</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. DEPOIMENTOS -->
+<section class="panel deep" id="depoimentos">
+  <div class="inner">
+    <div class="bigquote">
+      <span class="tag" style="justify-self:start">Quem esteve lá conta</span>
+      <blockquote>A conexão foi real. <span class="m">Participantes, palestrantes e parceiros contam, com as próprias palavras,</span> como foi viver a 2ª Jornada.</blockquote>
+    </div>
+    <div class="shorts" id="shorts"></div>
+    <div class="cta-strip">
+      <p>Quer a sua marca na <span class="neon">próxima edição?</span></p>
+      <a class="btn btn-neon" data-wa="Olá! Vi os depoimentos da 2ª Jornada e quero colocar minha marca na 3ª edição." href="#">Quero participar<span class="arr"><svg class="ic"><use href="#i-arr"/></svg></span></a>
+    </div>
+  </div>
+</section>
+
+<!-- 13. PRINTS -->
+<section class="panel light" id="elogios">
+  <div class="inner">
+    <div class="row" style="align-items:flex-end">
+      <div>
+        <span class="tag">Vocês falam</span>
+        <h2 class="h2" style="margin-top:22px">O que ficou <span class="hl">depois</span> <span class="m">da Jornada.</span></h2>
+      </div>
+      <p class="p">Comentários reais deixados no Instagram do SINTER-MT por quem participou da 2ª edição.</p>
+    </div>
+    <!-- PRINTS: para acrescentar, copie uma linha <figure class="print"> e troque a imagem -->
+    <div class="prints">
+      <figure class="print"><img src="img/embed_5.jpg" alt="Comentário de @valquiriaoficial no Instagram do SINTER-MT elogiando a 2ª Jornada"></figure>
+      <figure class="print"><img src="img/embed_6.jpg" alt="Comentário de @thtcterapiaoficial no Instagram do SINTER-MT elogiando a 2ª Jornada"></figure>
+      <figure class="print"><img src="img/embed_7.jpg" alt="Comentário de @lucirodriguesterapeuta no Instagram do SINTER-MT elogiando a 2ª Jornada"></figure>
+      <figure class="print"><img src="img/embed_8.jpg" alt="Comentário de @wyl_terapeutafitofloral no Instagram do SINTER-MT elogiando a 2ª Jornada"></figure>
+      <figure class="print"><img src="img/embed_9.jpg" alt="Comentário de @gilvanice_soaress no Instagram do SINTER-MT elogiando a 2ª Jornada"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- 12. COTAS -->
+<section class="panel deep" id="cotas">
+  <div class="inner">
+    <div class="plans-top">
+      <span class="tag">Expositores e patrocinadores</span>
+      <h2 class="h2" style="margin-top:22px">Escolha o tamanho da <span class="neon">sua presença.</span></h2>
+      <p class="p">Cinco formatos de participação, do apoio institucional ao protagonismo total. Todas as cotas podem ser ajustadas em uma conversa com a nossa equipe.</p>
+    </div>
+
+    <div class="drawer">
+      <div>
+        <h3 class="cy">Escolha a sua cota.</h3>
+        <div class="plan-list" role="tablist" aria-label="Cotas de patrocínio" id="planList"></div>
+      </div>
+      <div class="detail" id="planDetail" role="tabpanel" aria-live="polite"></div>
+    </div>
+
+    <div class="compare-wrap">
+      <table class="compare">
+        <caption>O que muda de uma cota para outra</caption>
+        <thead>
+          <tr><th scope="col">Benefício</th><th scope="col" class="d">Diamond</th><th scope="col">Master</th><th scope="col">Gold</th><th scope="col">Silver</th><th scope="col">Apoio</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Espaço de stand</td><td class="d">8x6 m, área premium vermelha</td><td>6x4 m, área premium</td><td>4x2 m, área premium</td><td class="tbd">a definir</td><td class="no">Não</td></tr>
+          <tr><td>Ingressos para a equipe</td><td class="d">5, nos três dias</td><td>4, acesso total</td><td>4, acesso total</td><td class="tbd">a definir</td><td class="no">Não</td></tr>
+          <tr><td>Ingressos para clientes</td><td class="d">20 Standard</td><td>15</td><td>5</td><td class="tbd">a definir</td><td class="no">Não</td></tr>
+          <tr><td>Palestra no palco principal</td><td class="d">2 de 50 min</td><td>1 de 50 min</td><td class="no">Não</td><td class="tbd">a definir</td><td class="no">Não</td></tr>
+          <tr><td>Indicação de palestrantes</td><td class="d">Até 3</td><td class="no">Não</td><td class="no">Não</td><td class="tbd">a definir</td><td class="no">Não</td></tr>
+          <tr><td>Vídeo no telão</td><td class="d">Até 45 s</td><td>Até 30 s</td><td class="no">Não</td><td class="tbd">a definir</td><td class="no">Não</td></tr>
+          <tr><td>Logo no backdrop</td><td class="d">Em destaque</td><td class="y">Sim</td><td class="y">Sim</td><td class="y">Sim</td><td>Seção “Apoio”</td></tr>
+          <tr><td>Logo na bolsa-brinde</td><td class="d">Sim</td><td class="y">Sim</td><td class="no">Não</td><td class="tbd">a definir</td><td class="no">Não</td></tr>
+          <tr><td>Logo em todos os materiais oficiais</td><td class="d">Sim</td><td class="no">Não</td><td class="no">Não</td><td class="tbd">a definir</td><td class="no">Não</td></tr>
+          <tr><td>Jantar com os mentores</td><td class="d">Patrocinador e palestrantes</td><td>Para 6 pessoas</td><td class="no">Não</td><td class="tbd">a definir</td><td class="no">Não</td></tr>
+          <tr><td>Hospedagem</td><td class="d">3 noites, suíte casal</td><td class="no">Não</td><td class="no">Não</td><td class="tbd">a definir</td><td class="no">Não</td></tr>
+          <tr><td>Passeio na Chapada dos Guimarães</td><td class="d">Privativo</td><td class="no">Não</td><td class="no">Não</td><td class="tbd">a definir</td><td class="no">Não</td></tr>
+          <tr class="total"><td>Investimento</td><td class="d">R$ 56.000</td><td>R$ 29.000</td><td>R$ 12.900</td><td class="tbd">em breve</td><td>R$ 3.900</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="extras">
+      <div class="diamond-only">
+        <span class="tag" style="border-color:rgba(2,28,57,.25);color:var(--ink)">Exclusivo da cota Diamond</span>
+        <h3 style="margin-top:20px">Uma experiência que a sua marca não encontra em outro evento do estado.</h3>
+        <div class="do-grid">
+          <div><svg class="ic"><use href="#i-hotel"/></svg><strong>3 noites de hotel</strong><span>Suíte casal em hotel próximo ao evento.</span></div>
+          <div><svg class="ic"><use href="#i-dinner"/></svg><strong>Jantar com os mentores</strong><span>Para o patrocinador, seus palestrantes e os mentores da Jornada.</span></div>
+          <div><svg class="ic"><use href="#i-mountain"/></svg><strong>Chapada dos Guimarães</strong><span>Passeio privativo com guias experientes, na segunda-feira após o evento.</span></div>
+          <div><svg class="ic"><use href="#i-speaker"/></svg><strong>Até 3 palestrantes</strong><span>Após aprovação do comitê científico. Hospedagem por conta do evento, passagens por conta do patrocinador.</span></div>
+        </div>
+      </div>
+      <div class="pay-col">
+        <div class="pay">
+          <span class="tag">Formas de pagamento</span>
+          <p class="big">15% <small>de desconto no Pix à vista na cota Diamond</small></p>
+          <p style="margin-top:14px"><strong>Master, Gold, Silver e Apoio:</strong> 10% de desconto no Pix à vista.<br><strong>Todas as cotas:</strong> cartão de crédito em até 4x.</p>
+        </div>
+        <div class="custom">
+          <b>Quer um formato sob medida?</b>
+          <p>Montamos o pacote junto com você, de acordo com os objetivos da sua marca.</p>
+          <a class="btn btn-ink" data-wa="Olá! Quero montar um pacote de patrocínio sob medida para a 3ª Jornada." href="#" style="align-self:flex-start">Montar pacote<span class="arr"><svg class="ic"><use href="#i-arr"/></svg></span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 15. LOCAL E PASSOS -->
+<section class="panel light" id="local">
+  <div class="inner">
+    <span class="tag">Como participar</span>
+    <h2 class="h2" style="margin-top:22px;max-width:16ch">Três passos para garantir o <span class="neon">seu espaço.</span></h2>
+    <div class="place">
+      <div class="place-info">
+        <span class="tag" style="align-self:flex-start">Local do evento</span>
+        <div>
+          <h3 class="h3">Centro de Eventos <span class="neon">Pantanal</span></h3>
+          <p class="p" style="margin-top:12px;font-size:15px">Um dos principais centros de eventos de Mato Grosso, com estrutura para um público maior, uma feira de expositores ampliada e programação simultânea.</p>
+        </div>
+        <address><svg class="ic"><use href="#i-pin"/></svg>Av. Bernardo Antônio de Oliveira Neto, s/n, Jardim Santa Marta, Cuiabá/MT</address>
+      </div>
+      <ol class="steps">
+        <li><span class="n">1</span><div><strong>Fale com a nossa equipe</strong><span>Pelo WhatsApp, com a cota que mais combina com você.</span></div></li>
+        <li><span class="n">2</span><div><strong>Agende uma reunião</strong><span>Apresentamos os detalhes e tiramos todas as dúvidas.</span></div></li>
+        <li><span class="n">3</span><div><strong>Personalize e garanta</strong><span>Ajustamos o pacote e reservamos o seu espaço.</span></div></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- 14. DIRETORIA -->
+<section class="panel dark" id="diretoria" style="padding:10px">
+  <div class="team">
+    <div class="photo"><img src="img/dir_4517.jpg" alt="Diretoria do SINTER-MT, gestão 2026 a 2029, no palco da 2ª Jornada" style="object-position:center 38%;transform:scale(1.22);transform-origin:50% 43%"></div>
+    <div class="txt light">
+      <div class="team-years years"><span class="tag">Quem realiza</span><span class="tag">Gestão 2026 a 2029</span></div>
+      <div>
+        <h2 class="h2">Diretoria <span class="m">do</span> SINTER.</h2>
+        <p class="p" style="margin-top:18px">Uma gestão unida, focada em tecnologia e atualização, que honra o legado de quem veio antes e segue firme na valorização dos terapeutas de Mato Grosso.</p>
+      </div>
+      <div class="row">
+        <p class="p" style="font-size:14px">Representando a categoria terapêutica de MT desde 2007.</p>
+        <img src="img/embed_10.png" alt="" width="54" height="54" style="width:54px;height:54px;object-fit:contain">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 16. FAQ -->
+<section class="panel light" id="duvidas">
+  <div class="inner faq-wrap">
+    <div>
+      <span class="tag">Dúvidas frequentes</span>
+      <h2 class="h2" style="margin-top:22px">Antes de <span class="m">fechar.</span></h2>
+      <p class="p" style="margin-top:18px">Não achou a sua resposta? A equipe responde pelo WhatsApp.</p>
+    </div>
+    <div class="faq" style="margin-top:0">
+      <details><summary>Posso montar um pacote diferente das cotas?<span class="round"><svg class="ic"><use href="#i-plus"/></svg></span></summary><p>Sim. Todas as cotas podem ser ajustadas, e também montamos um formato sob medida de acordo com os objetivos da sua marca.</p></details>
+      <details><summary>Quais são as formas de pagamento?<span class="round"><svg class="ic"><use href="#i-plus"/></svg></span></summary><p>Pix à vista com 15% de desconto na cota Diamond e 10% nas demais, ou cartão de crédito em até 4x.</p></details>
+      <details><summary>Posso indicar palestrantes da minha marca?<span class="round"><svg class="ic"><use href="#i-plus"/></svg></span></summary><p>Na cota Diamond, você indica até 3 palestrantes, que passam pela aprovação do comitê científico. A hospedagem fica por conta do evento e as passagens aéreas por conta do patrocinador. Na Master, a marca tem uma palestra de 50 minutos.</p></details>
+      <details><summary>A minha marca aparece no Sintercast?<span class="round"><svg class="ic"><use href="#i-plus"/></svg></span></summary><p>Na 3ª edição, o podcast terá espaço para marcas parceiras e seus especialistas. Fale com a equipe para entender como isso entra no seu pacote.</p></details>
+      <details><summary>Quando e onde será a 3ª Jornada?<span class="round"><svg class="ic"><use href="#i-plus"/></svg></span></summary><p>Em abril de 2027, no Centro de Eventos Pantanal, em Cuiabá/MT, com três dias de programação.</p></details>
+      <details><summary>Quantas cotas Diamond existem?<span class="round"><svg class="ic"><use href="#i-plus"/></svg></span></summary><p>As vagas da cota Diamond são limitadas. Consulte a disponibilidade com a nossa equipe.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- 17. FINAL -->
+<section class="panel dark final" id="contato">
+  <div class="inner">
+    <img src="img/embed_11.png" alt="" width="46" height="46" style="width:46px;height:46px;margin:0 auto 20px;object-fit:contain">
+    <h2 class="h2">Que tal estar na <span class="m">próxima foto</span> <span class="neon">conosco?</span></h2>
+    <p class="p">Exponha a sua marca na 3ª Jornada de Práticas Integrativas em Saúde de Mato Grosso.</p>
+    <div class="ctas">
+      <a class="btn btn-white" data-wa="Olá! Quero ser patrocinador da 3ª Jornada de Práticas Integrativas em Saúde de MT." href="#">Falar com a equipe<span class="arr"><svg class="ic"><use href="#i-arr"/></svg></span></a>
+    </div>
+    <div class="huge">
+      <a href="https://wa.me/5565993356566" target="_blank" rel="noopener">(65) 99335-6566</a>
+      <a class="sm" href="mailto:sinter.mt@gmail.com">sinter.mt@gmail.com</a>
+    </div>
+    <div class="foot-links">
+      <a class="brand" href="#inicio"><img src="img/embed_12.png" alt="" width="36" height="36" style="width:36px;height:36px">SINTER-MT</a>
+      <nav aria-label="Contatos">
+        <a href="https://wa.me/5565993356566" target="_blank" rel="noopener">Sandra Regina · (65) 99335-6566</a>
+        <a href="https://wa.me/5565999480847" target="_blank" rel="noopener">Luis Manoel · (65) 99948-0847</a>
+        <a href="https://www.instagram.com/sinter.mt/" target="_blank" rel="noopener">Instagram @sinter.mt</a>
+        <a href="https://sintermt.com.br" target="_blank" rel="noopener">sintermt.com.br</a>
+      </nav>
+    </div>
+  </div>
+  <div class="final-img">
+    <img src="img/pub_3858.jpg" alt="Plateia da 2ª Jornada assistindo à palestra" loading="lazy">
+    <p>© 2027 SINTER-MT · Sindicato dos Terapeutas do Estado de Mato Grosso</p>
+  </div>
+</section>
+
+<a class="fab" data-wa="Olá! Vi a proposta da 3ª Jornada e quero saber mais sobre o patrocínio." href="#" aria-label="Falar com o SINTER-MT no WhatsApp"><svg class="ic"><use href="#i-wa"/></svg></a>
+
+<script>
+/* ===================== CONFIGURAÇÃO =====================
+   WHATSAPP: número que os botões abrem (DDI + DDD + número, só dígitos).
+   SHORTS: links dos YouTube Shorts com depoimentos, entre aspas e separados por vírgula.
+   COTAS: para preencher a Silver, edite o bloco "silver" abaixo.
+=========================================================== */
+const CONFIG = {
+  WHATSAPP: "5565993356566",
+  /* Vídeos que ficam na pasta "videos", junto do index.html */
+  VIDEOS: [
+    { src: "videos/depoimento-2.mp4", capa: "videos/depoimento-2.jpg" },
+    { src: "videos/depoimento-3.mp4", capa: "videos/depoimento-3.jpg" },
+    { src: "videos/depoimento-6.mp4", capa: "videos/depoimento-6.jpg" }
+  ],
+  /* Opcional: links de YouTube Shorts */
+  SHORTS: []
+};
+
+const COTAS = [
+  { id:"diamond", nome:"Diamond", resumo:"Protagonismo absoluto", preco:"R$ 56.000", selo:"Vagas limitadas",
+    desc:"O conjunto de benefícios mais completo e exclusivo da 3ª Jornada: máxima visibilidade, conforto e experiências diferenciadas.",
+    itens:["Stand 8x6 m na área premium vermelha, em localização privilegiada","2 palestras de 50 min no palco principal","Indicação de até 3 palestrantes, com aprovação do comitê científico","5 ingressos para a equipe atuar no stand nos três dias","20 ingressos Standard para distribuir ao seu público","Vídeo institucional de até 45 s no telão nos intervalos principais","Logo em destaque no backdrop e na bolsa-brinde","Logomarca em todos os materiais oficiais","3 noites em suíte casal no hotel próximo ao evento","Jantar exclusivo com os mentores da Jornada","Passeio privativo na Chapada dos Guimarães"] },
+  { id:"master", nome:"Master", resumo:"Alta exposição e palco", preco:"R$ 29.000",
+    desc:"Para marcas que querem alta exposição, palco e relacionamento próximo com quem lidera o setor.",
+    itens:["Stand 6x4 m na área premium","Palestra de 50 min","4 ingressos de acesso total para a equipe","15 ingressos para clientes","Logo no backdrop e na bolsa-brinde","Vídeo de até 30 s no telão","Jantar exclusivo para 6 pessoas com os mentores"] },
+  { id:"gold", nome:"Gold", resumo:"Presença forte na feira", preco:"R$ 12.900",
+    desc:"Para marcas que querem presença forte na feira e contato direto com o público.",
+    itens:["Stand 4x2 m na área premium","4 ingressos de acesso total para a equipe","5 ingressos para clientes","Logo no backdrop"] },
+  /* EDITAR SILVER: troque preco, desc e itens quando tiver as informações */
+  { id:"silver", nome:"Silver", resumo:"Entrada estratégica", preco:"Em breve", embreve:true,
+    desc:"Entrada estratégica na feira de expositores, para empresas que querem começar a se posicionar na saúde integrativa.",
+    itens:["Espaço na área de expositores","Ingressos para a equipe","Logo no backdrop","Detalhes com a nossa equipe"] },
+  { id:"apoio", nome:"Apoio", resumo:"Marca associada ao evento", preco:"R$ 3.900",
+    desc:"Para marcas que querem associar a sua imagem ao maior encontro de práticas integrativas de Mato Grosso.",
+    itens:["Logo no backdrop de expositores, na seção “Apoio à realização”"] }
+];
+
+const wa = msg => "https://wa.me/" + CONFIG.WHATSAPP + "?text=" + encodeURIComponent(msg);
+const svg = id => '<svg class="ic"><use href="#' + id + '"/></svg>';
+
+/* Botões de WhatsApp */
+function bindWa(root){
+  root.querySelectorAll("[data-wa]").forEach(el => {
+    el.href = wa(el.dataset.wa); el.target = "_blank"; el.rel = "noopener";
+  });
+}
+bindWa(document);
+
+/* Seletor de cotas */
+const list = document.getElementById("planList");
+const detail = document.getElementById("planDetail");
+function showPlan(id){
+  const c = COTAS.find(x => x.id === id);
+  list.querySelectorAll(".plan").forEach(b => b.setAttribute("aria-selected", b.dataset.id === id ? "true" : "false"));
+  const msg = c.embreve ? "Olá! Quero saber os detalhes da cota " + c.nome + " da 3ª Jornada." : "Olá! Tenho interesse na cota " + c.nome + " da 3ª Jornada.";
+  detail.innerHTML =
+    '<div class="dt"><div><div class="dn">' + c.nome + '</div><p class="dd">' + c.desc + '</p></div>' +
+    (c.selo ? '<span class="tag neon-t">' + c.selo + '</span>' : '') + '</div>' +
+    '<ul>' + c.itens.map(i => '<li>' + svg("i-check") + '<span>' + i + '</span></li>').join("") + '</ul>' +
+    '<div class="dp' + (c.embreve ? ' soon' : '') + '"><div><small>Investimento</small><b>' + c.preco + '</b></div>' +
+    '<a class="btn btn-neon" data-wa="' + msg + '" href="#">' + (c.embreve ? 'Consultar' : 'Quero essa cota') + '<span class="arr">' + svg("i-arr") + '</span></a></div>';
+  bindWa(detail);
+}
+COTAS.forEach((c, i) => {
+  const b = document.createElement("button");
+  b.className = "plan"; b.type = "button"; b.dataset.id = c.id;
+  b.setAttribute("role","tab");
+  b.innerHTML = '<span><b>' + c.nome + (c.selo ? '<span class="badge">Mais completa</span>' : '') + '</b><small>' + c.resumo + '</small></span><span class="pr">' + c.preco + '</span>';
+  b.addEventListener("click", () => showPlan(c.id));
+  list.appendChild(b);
+});
+showPlan("diamond");
+
+/* Depoimentos em vídeo */
+function ytId(url){
+  const m = String(url).match(/(?:shorts\/|youtu\.be\/|v=|embed\/)([A-Za-z0-9_-]{6,})/);
+  return m ? m[1] : null;
+}
+const shortsEl = document.getElementById("shorts");
+let total = 0;
+CONFIG.VIDEOS.forEach((v, i) => {
+  const box = document.createElement("div");
+  box.className = "short";
+  box.innerHTML = '<video src="' + v.src + '" poster="' + v.capa + '" playsinline preload="none"></video>' +
+    '<button class="vplay" type="button" aria-label="Assistir depoimento ' + (i+1) + '"><span class="playb">' + svg("i-play") + '</span></button>';
+  const video = box.querySelector("video");
+  box.querySelector(".vplay").addEventListener("click", () => {
+    document.querySelectorAll(".short video").forEach(o => { if (o !== video) o.pause(); });
+    box.classList.add("playing"); video.controls = true; video.play();
+  });
+  video.addEventListener("play", () => document.querySelectorAll(".short video").forEach(o => { if (o !== video) o.pause(); }));
+  shortsEl.appendChild(box); total++;
+});
+function ytId(url){
+  const m = String(url).match(/(?:shorts\/|youtu\.be\/|v=|embed\/)([A-Za-z0-9_-]{6,})/);
+  return m ? m[1] : null;
+}
+CONFIG.SHORTS.map(ytId).filter(Boolean).forEach((id, i) => {
+  const box = document.createElement("div");
+  box.className = "short";
+  box.innerHTML = '<button type="button" aria-label="Assistir depoimento"><img src="https://i.ytimg.com/vi/' + id + '/hqdefault.jpg" alt=""><span class="playb">' + svg("i-play") + '</span></button>';
+  box.querySelector("button").addEventListener("click", () => {
+    box.innerHTML = '<iframe src="https://www.youtube.com/embed/' + id + '?autoplay=1&playsinline=1&rel=0" title="Depoimento" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>';
+  });
+  shortsEl.appendChild(box); total++;
+});
+
+/* Títulos com blur de surgimento e números com contagem */
+const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+const heads = document.querySelectorAll(".h2, .pod-title");
+const counters = document.querySelectorAll("[data-count]");
+if (!reduce && "IntersectionObserver" in window){
+  heads.forEach(h => h.classList.add("reveal"));
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (!e.isIntersecting) return;
+    io.unobserve(e.target);
+    if (e.target.dataset.count){
+      const end = +e.target.dataset.count, dur = 1600, t0 = performance.now();
+      const step = now => { const p = Math.min((now - t0) / dur, 1); e.target.textContent = Math.round(end * (1 - Math.pow(1 - p, 3))); if (p < 1) requestAnimationFrame(step); };
+      e.target.textContent = "0"; requestAnimationFrame(step);
+    } else e.target.classList.add("in");
+  }), {threshold:.1, rootMargin:"0px 0px -5% 0px"});
+  heads.forEach(h => io.observe(h));
+  counters.forEach(c => { c.textContent = "0"; io.observe(c); });
+}
+/* Carrossel do coffee break */
+const track = document.getElementById("cbTrack");
+document.querySelectorAll(".car-nav .round").forEach(b => b.addEventListener("click", () => {
+  track.scrollBy({left: +b.dataset.dir * track.clientWidth * .8, behavior:"smooth"});
+}));
+/* Som do vídeo do podcast */
+document.querySelectorAll(".pv-sound").forEach(btn => btn.addEventListener("click", () => {
+  const v = btn.closest(".phone").querySelector("video");
+  v.muted = !v.muted; if (!v.muted) { v.currentTime = 0; v.play(); }
+  btn.setAttribute("aria-pressed", String(!v.muted));
+  btn.setAttribute("aria-label", v.muted ? "Ativar som" : "Desativar som");
+  btn.querySelector("use").setAttribute("href", v.muted ? "#i-sound-off" : "#i-sound-on");
+}));
+/* Filtro das fotos dos patrocinadores */
+document.querySelectorAll(".chip-f").forEach(b => b.addEventListener("click", () => {
+  document.querySelectorAll(".chip-f").forEach(o => o.setAttribute("aria-pressed", o === b ? "true" : "false"));
+  const f = b.dataset.f;
+  document.querySelectorAll("#spGrid .sp-item").forEach(it => { it.hidden = !(f === "all" || it.dataset.cat === f); });
+}));
+</script>
+</body>
+</html>
