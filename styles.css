@@ -897,3 +897,9 @@ h2 .verde { color: var(--gold); }
 /* H1-LARGO: titulo do topo mais largo (menos encaixotado) */
 .hero__inner { max-width: 1320px; }
 .hero h1.h1-linhas { max-width: none; line-height: .98; }
+
+/* SPONSOR-PH: 6 cards de exemplo com a logo da Sinter a 20% (ate confirmar patrocinadores) */
+.sponsor-ph-grid { margin-top: 44px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.sponsor-ph { aspect-ratio: 16 / 9; display: grid; place-items: center; background: var(--white); border: 1px dashed var(--line); border-radius: 14px; }
+.sponsor-ph img { width: 34%; height: auto; opacity: .2; }
+@media (max-width: 640px) { .sponsor-ph-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; } .sponsor-ph img { width: 44%; } }
