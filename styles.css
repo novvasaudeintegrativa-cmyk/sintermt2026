@@ -903,3 +903,7 @@ h2 .verde { color: var(--gold); }
 .sponsor-ph { aspect-ratio: 16 / 9; display: grid; place-items: center; background: var(--white); border: 1px dashed var(--line); border-radius: 14px; }
 .sponsor-ph img { width: 34%; height: auto; opacity: .2; }
 @media (max-width: 640px) { .sponsor-ph-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; } .sponsor-ph img { width: 44%; } }
+
+/* SINTER-PH: logo da Sinter toda branca a 20% como exemplo nos apoiadores */
+.marquee-set img.sinter-ph { height: 72px; width: auto; filter: brightness(0) invert(1); opacity: .2; }
+@media (max-width: 640px) { .marquee-set img.sinter-ph { height: 52px; } }
