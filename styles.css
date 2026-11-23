@@ -915,3 +915,10 @@ h2 .verde { color: var(--gold); }
 .hero__brand-line { width: 1px; align-self: stretch; min-height: 48px; background: #fff; flex: none; }
 .hero__brand-name { font-family: var(--mono); font-size: 12.5px; letter-spacing: .22em; text-transform: uppercase; font-weight: 500; color: var(--gold); text-align: left; line-height: 1.6; }
 @media (max-width: 640px) { .hero__brand { gap: 14px; } .hero__brand-logo { width: 48px; height: 48px; } .hero__brand-name { font-size: 11px; letter-spacing: .16em; } }
+
+/* CANTOS-RETOS: botoes e badges com cantos suaves (10px), nunca em pilula - mesma ideia da proposta */
+.btn, .btn--lg, .btn--gold, .btn--navy, .btn--ghost, .btn--ghost-light, .btn--disabled { border-radius: 10px; }
+.hotel-badge, .ticket__badge, .ph__label { border-radius: 10px; }
+.vsl__play { border-radius: 18px; }
+.gallery__arrow { border-radius: 12px; }
+.whatsapp-float { border-radius: 16px; }
