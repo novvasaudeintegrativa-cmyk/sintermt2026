@@ -890,3 +890,6 @@ h2, .sec-head h2, .final h2 {
 /* HERO-SUB-ABAIXO: texto de apoio fica abaixo da VSL */
 .hero__inner > .hero__sub { margin-top: 36px; margin-bottom: 0; }
 .hero__inner > .hero__sub + .hero__meta { margin-top: 32px; }
+
+/* VERDE: destaque em verde dentro de titulos */
+h2 .verde { color: var(--gold); }
