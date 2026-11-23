@@ -11,7 +11,7 @@
 <link rel="icon" type="image/png" href="img/embed_1.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=Spline+Sans+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hanken+Grotesk:wght@400;500;600;700;800&family=Spline+Sans+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root{
   --bg:#021c39;
@@ -622,6 +622,356 @@ table.compare{width:100%;min-width:820px;border-collapse:separate;border-spacing
   html{scroll-behavior:auto}
   .hero h1 .ln,.hero-foot,.hero-widgets,.reveal{opacity:1;transform:none;filter:none}
 }
+
+/* =====================================================================
+   TEMA DO SITE SINTER (mesmo layout, cores e fontes da pagina raiz)
+   ===================================================================== */
+:root{
+  --navy:#043672;--navy-700:#0a4d8f;--navy-900:#021c39;
+  --paper:#043672;--paper-2:#062f5b;--card:#0b3f78;
+  --ink-soft:#bacce6;--ink-faint:#88a1c5;
+  --neon:oklch(0.80 0.135 165);
+  --dim:#a9bedb;
+  --line:rgba(255,255,255,.14);
+  --r-xl:14px;--r-lg:14px;--r-md:12px;
+  --mono:"Spline Sans Mono",ui-monospace,"SF Mono",Menlo,monospace;
+  --maxw:1180px;--gutter:clamp(20px,5vw,64px);
+}
+html{scroll-padding-top:84px}
+body{background:var(--paper);color:#f4f1ea;font-size:18px;line-height:1.65;padding:0;-webkit-font-smoothing:antialiased}
+::selection{background:var(--neon);color:#042319}
+
+/* secoes de largura total, ritmo paper / paper-2 / navy-900 como no site */
+.panel{border-radius:0;margin:0;border:0;padding:clamp(72px,9vw,132px) var(--gutter)}
+.panel.dark{background:var(--paper)}
+.panel.alt{background:var(--paper-2);color:#f4f1ea}
+.panel.navy{background:var(--navy-900);border:0}
+.panel.final{background:var(--navy-900)}
+#plateia,#diretoria{padding:10px!important;background:var(--navy-900)}
+.inner{max-width:var(--maxw)}
+.final-img{margin-left:calc(-1 * var(--gutter));margin-right:calc(-1 * var(--gutter))}
+
+/* tipografia */
+.h1,.h2,.h3{font-weight:700;letter-spacing:-.015em;line-height:1.08}
+.h1{font-size:clamp(34px,5.2vw,62px);letter-spacing:-.025em;line-height:1.06}
+.h2{font-size:clamp(28px,4vw,50px);text-wrap:pretty}
+.h3{font-size:clamp(24px,2.6vw,34px)}
+.m{color:var(--ink-faint)}
+.p{color:var(--ink-soft);font-size:clamp(16px,1.4vw,18px)}
+.p strong{color:#fff}
+.neon{color:var(--neon)}
+.hl{background:none;color:var(--neon);padding:0;transform:none;display:inline;border-radius:0}
+
+/* kicker mono com tracinho (igual ao site) */
+.tag{font-family:var(--mono);text-transform:uppercase;letter-spacing:.12em;font-weight:500;color:var(--ink-soft)}
+.inner>.tag,.inner .row>div>.tag,.ed-head>div>.tag,.research>div>.tag,.aud>div>.tag,.plans-top>.tag,.faq-wrap>div>.tag,.bigquote>.tag{
+  border:0;padding:0;background:none;color:var(--kick,var(--neon));font-size:12.5px;letter-spacing:.22em;gap:10px}
+.inner>.tag::before,.inner .row>div>.tag::before,.ed-head>div>.tag::before,.research>div>.tag::before,.aud>div>.tag::before,.plans-top>.tag::before,.faq-wrap>div>.tag::before,.bigquote>.tag::before{content:"";width:26px;height:1px;background:currentColor;display:inline-block}
+.plans-top>.tag{justify-content:center}
+.kicker{font-family:var(--mono);font-size:12.5px;letter-spacing:.22em;text-transform:uppercase;font-weight:500;color:var(--neon);display:inline-flex;align-items:center;gap:10px}
+.kicker::before{content:"";width:26px;height:1px;background:currentColor;display:inline-block}
+.tag.fill{background:rgba(255,255,255,.08)}
+.tag.neon-t{color:var(--ink)}
+
+/* botoes: pilula simples, verde de destaque */
+.btn{padding:16px 26px;min-height:0;gap:10px;font-size:16px;font-weight:600;text-transform:none;letter-spacing:.01em;border:1px solid transparent}
+.btn .arr{width:auto;height:auto;background:none!important;color:inherit!important;border-radius:0}
+.btn:hover .arr{transform:translateX(3px)}
+.btn .arr .ic{width:18px;height:18px}
+.btn-neon{background:var(--neon);color:#042319;box-shadow:0 12px 30px -12px oklch(0.70 0.135 162/.55)}
+.btn-neon:hover{box-shadow:0 18px 38px -12px oklch(0.70 0.135 162/.75)}
+.btn-white{background:#fff;color:var(--navy)}
+.btn-ink{background:var(--navy-700);color:#fff}
+.btn-ink:hover{background:#1059a0}
+.btn-line{background:transparent;color:#f4f1ea;border-color:var(--line);padding:16px 26px}
+.btn-line:hover{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.4)}
+
+/* header fixo translucido (igual ao site) */
+.nav{position:fixed;inset:0 0 auto 0;z-index:60;padding:16px var(--gutter);backdrop-filter:blur(16px) saturate(1.3);-webkit-backdrop-filter:blur(16px) saturate(1.3);border-bottom:1px solid rgba(255,255,255,.4);transition:background .3s,box-shadow .3s,padding .3s}
+.nav.scrolled{background:rgba(255,255,255,.78);box-shadow:0 6px 24px -12px rgba(2,16,33,.45);padding-top:12px;padding-bottom:12px}
+.brand{gap:12px;font-size:inherit}
+.brand__mark,.brand img{width:46px;height:46px;object-fit:contain}
+.brand__txt{line-height:1.05;display:block}
+.brand__txt b{display:block;font-weight:700;font-size:15px;letter-spacing:.02em}
+.brand__txt span{display:block;font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#5d6f83;font-weight:400}
+.nav-links{gap:30px}
+.nav-links a{font-size:14.5px;color:#34465a;font-weight:600;padding:0;border-radius:0;white-space:nowrap}
+.nav-links a:hover{background:none;color:var(--navy)}
+.nav .btn{min-height:0;padding:10px 20px;font-size:14.5px}
+.nav .btn .arr{display:none}
+.foot-links .brand img{width:36px;height:36px}
+.foot-links .brand{color:#f4f1ea;font-weight:700}
+
+/* hero estilo referencia: foto nitida, titulo embaixo a esquerda, cards de vidro a direita */
+.hero{min-height:calc(100svh - 0px);padding:0;display:flex;flex-direction:column;align-items:stretch;background:var(--navy-900)}
+.hero .bg img{opacity:1;object-position:center 72%}
+.hero .bg::after{background:linear-gradient(90deg,rgba(2,28,57,.78) 0%,rgba(2,28,57,.5) 38%,rgba(2,28,57,0) 72%),linear-gradient(180deg,rgba(2,28,57,.5) 0%,rgba(2,28,57,.12) 30%,rgba(2,28,57,.4) 62%,rgba(2,28,57,.92) 88%,var(--navy-900) 100%)}
+.hero .kicker,.hero .hero-tags .tag{color:#fff!important;font-weight:600;text-shadow:0 1px 12px rgba(2,28,57,.95),0 0 3px rgba(2,28,57,.8)}
+.hero .kicker::before,.hero .hero-tags .tag::before{background:var(--neon)!important;height:2px}
+.hero h1{text-shadow:0 2px 24px rgba(2,28,57,.45)}
+.hero-body{order:0;position:relative;z-index:2;margin-top:auto;width:100%;max-width:none;padding:0 var(--gutter) clamp(36px,5vw,64px);text-align:left;display:block}
+.hero-tags{justify-content:flex-start;margin-bottom:22px;gap:8px 28px}
+.hero-tags .tag{color:var(--neon)!important}
+.hero h1{max-width:13ch;width:auto;margin-top:0;font-size:clamp(42px,6.6vw,94px);letter-spacing:-.03em;line-height:1.02;text-align:left}
+.hero h1 .ln.m{color:rgba(255,255,255,.66)!important;font-size:1em;font-weight:700;margin:0}
+.hero h1 .ln.neon{color:var(--neon)}
+.hero-foot{flex-direction:row;align-items:flex-end;justify-content:space-between;gap:30px;margin-top:34px}
+.hero-foot p{max-width:30ch;color:rgba(255,255,255,.88);font-size:clamp(16px,1.6vw,20px)}
+.hero-foot p strong{color:var(--neon)}
+.ctas{justify-content:flex-start}
+.hero-widgets{order:0;position:absolute;right:var(--gutter);top:112px;z-index:2;display:grid;gap:12px;width:250px;max-width:none;margin:0;padding:0;border:0;opacity:1;animation:none}
+.hero-widgets .widget{display:flex;align-items:center;justify-content:space-between;gap:12px;background:rgba(2,28,57,.82);border:1px solid var(--line);border-radius:18px;padding:14px 18px;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:0 24px 60px -20px rgba(2,28,57,.6)}
+.hero-widgets .widget small{display:block;font-size:12px;color:var(--ink-soft);line-height:1.3}
+.hero-widgets .widget small::after{content:none}
+.hero-widgets .widget b{display:block;font-size:15px;color:#fff;font-weight:700;line-height:1.35}
+.hero-widgets .widget>div{display:block}
+.hero-widgets .bar{display:block}
+.hero-widgets .bar i{background:linear-gradient(90deg,var(--navy-700),var(--neon))}
+@media(max-width:1100px){.hero-widgets{display:none}}
+@media(max-width:700px){.hero-foot{flex-direction:column;align-items:flex-start}}
+/* header transparente sobre a foto; vira o translucido do site ao rolar */
+.nav{background:transparent;backdrop-filter:none;-webkit-backdrop-filter:none;border-bottom:1px solid transparent}
+.nav .brand__txt b{color:#fff}
+.nav .brand__txt span{color:rgba(255,255,255,.7)}
+.nav .nav-links a{color:rgba(255,255,255,.88)}
+.nav .nav-links a:hover{color:#fff}
+.nav.scrolled{background:rgba(255,255,255,.78);backdrop-filter:blur(16px) saturate(1.3);-webkit-backdrop-filter:blur(16px) saturate(1.3);border-bottom-color:rgba(255,255,255,.4)}
+.nav.scrolled .brand__txt b{color:var(--navy)}
+.nav.scrolled .brand__txt span{color:#5d6f83}
+.nav.scrolled .nav-links a{color:#34465a}
+.nav.scrolled .nav-links a:hover{color:var(--navy)}
+
+/* cartoes: radius 14, borda fina, superficie #0b3f78 */
+.pain-card.bad,.insight,.phase,.feat div,.pay,.place-info,.cta-strip,.sp,.ed,.cb-fact,.case .cc.w,.case .cc.d,.drawer,.compare-wrap,.custom,.team .txt,.steps li,.faq details{background:var(--card);border:1px solid var(--line);color:#f4f1ea}
+.shot,.sp-item,.short{background:var(--navy-900)}
+.ed{gap:34px}
+.ed .icb{width:46px;height:46px;border-radius:11px;background:rgba(255,255,255,.08);color:var(--neon)}
+.ed h3{font-weight:700;font-size:18px;letter-spacing:0}
+.ed p{color:var(--ink-soft)}
+.ed.feature{background:var(--navy-900)}
+.ed.feature .icb{background:rgba(255,255,255,.08);color:var(--neon)}
+.cb-fact .icb{background:rgba(255,255,255,.08);color:var(--neon);border-radius:11px}
+.cb-fact span{color:var(--ink-soft)}
+.case .cc.w p .m{color:var(--ink-faint)}
+.case .cc.w .tag{border-color:var(--line);color:var(--ink-soft)}
+.phase .when b{font-weight:700}
+.phase li{color:var(--ink-soft)}
+.insight p,.pay p,.place-info address,.feat span,.sp span,.wants span{color:var(--ink-soft)}
+.wants div{background:var(--card);border-radius:12px}
+.cta-strip{border-radius:14px}
+
+/* blocos de destaque verde viram cartoes contornados */
+.pain-card.good,.goal,.statement,.diamond-only,.sp.new,.spc-new,.cb-fact.n,.case .cc.n,.quote-card{background:rgba(82,217,166,.1);border:1px solid rgba(82,217,166,.4);color:#f4f1ea}
+.statement,.sp.new{border-radius:14px}
+.goal small,.goal>span,.sp.new span,.spc-new span,.do-grid span,.cb-fact.n span{color:var(--ink-soft);opacity:1}
+.goal b{color:var(--neon)}
+.pain-card.good .ic{color:var(--neon)}
+.pain-card.good .tag,.diamond-only .tag,.spc-new .tag,.case .cc.n .tag{border-color:var(--line)!important;color:var(--ink-soft)!important}
+.do-grid div{background:rgba(255,255,255,.06)}
+.cb-fact.n .icb,.sp.new .av{background:rgba(82,217,166,.18)}
+.mini-pill{color:#042319}
+
+/* publico */
+.aud-tags span{background:var(--card);border:1px solid var(--line);color:#f4f1ea;font-weight:500}
+.aud-tags span.k{background:var(--navy-900);color:#fff}
+.aud-tags span.n{background:rgba(82,217,166,.14);border-color:rgba(82,217,166,.45);color:#fff}
+
+/* multiplicador sobre foto: gradiente navy no lugar do branco */
+.mult-stage::before{background:linear-gradient(180deg,var(--paper-2) 0%,rgba(6,47,91,.85) 18%,rgba(6,47,91,0) 52%)}
+.bubble{color:#fff}
+.bubble.glass{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.3)}
+.bubble small{color:var(--ink-soft)}
+.bubble p{color:#e2ebf7}
+.bubble.neon-b{color:#042319}
+.bubble.neon-b small{color:rgba(4,35,25,.65)}
+.bubble.neon-b p{color:rgba(4,35,25,.8)}
+@media(max-width:900px){.mult-stage::before{background:linear-gradient(180deg,var(--paper-2) 0%,rgba(6,47,91,.6) 40%,rgba(6,47,91,0) 75%)}}
+
+/* sintercast / cotas: fonte unica do site (sem Bebas) */
+.pod-title{font-family:"Hanken Grotesk",system-ui,sans-serif;font-weight:800;letter-spacing:-.035em;line-height:.95;font-size:clamp(52px,7.2vw,108px)}
+.pv-bottom b{font-weight:700;font-size:28px;line-height:1}
+.detail .dn{font-weight:800;letter-spacing:-.03em;line-height:.95;font-size:clamp(44px,5vw,68px)}
+.detail{background:var(--navy-900);border:1px solid var(--line)}
+.drawer h3.cy{font-weight:700;letter-spacing:-.015em}
+.plan{background:rgba(255,255,255,.06);border:1px solid transparent}
+.plan:hover{background:rgba(255,255,255,.1)}
+.plan:focus-visible{outline-color:var(--neon)}
+.plan small{color:var(--ink-soft)}
+.plan[aria-selected="true"]{background:var(--navy-900);border-color:var(--neon);color:#fff}
+.plan[aria-selected="true"] small{color:var(--ink-soft)}
+.compare caption{font-weight:700;letter-spacing:-.015em}
+.compare th,.compare td{border-bottom-color:var(--line)}
+.compare th:first-child,.compare td:first-child{color:var(--ink-soft)}
+.compare thead th.d,.compare td.d{background:var(--navy-900)}
+.compare .y,.compare tr.total td{color:#fff}
+.compare .no{color:rgba(255,255,255,.28)}
+.compare .tbd{color:var(--ink-faint)}
+.compare tr.total td.d{color:var(--neon)}
+.custom p{color:var(--ink-soft)}
+
+/* faq / passos */
+.steps li{border-radius:999px}
+.steps li .n{background:rgba(255,255,255,.08);color:var(--neon)}
+.steps li:last-child .n{background:var(--neon);color:#042319}
+.steps span{color:var(--ink-soft)}
+.faq summary .round{background:rgba(255,255,255,.1);color:#fff}
+.faq details[open] summary .round{background:var(--neon);color:#042319}
+.faq details p{color:var(--ink-soft)}
+.faq summary{font-weight:700}
+
+/* depoimentos / final */
+.bigquote blockquote{font-weight:700;letter-spacing:-.02em}
+.huge{font-weight:700;letter-spacing:-.02em}
+.huge .sm{color:var(--ink-soft)}
+.fab{color:#042319}
+/* todas as etiquetas viram kicker (tracinho + texto mono), sem badge; so as sobre fotos mantem fundo p/ leitura */
+.tag:not(.shot .tag):not(.sp-item .tag):not(.cb-item .tag):not(.crowd .tag):not(.aud-photos .tag):not(.neon-t):not(.mini-pill){
+  border:0!important;padding:0!important;background:none!important;border-radius:0;color:var(--kick,var(--neon))!important;font-size:12.5px;letter-spacing:.22em;gap:10px;font-weight:500}
+.tag:not(.shot .tag):not(.sp-item .tag):not(.cb-item .tag):not(.crowd .tag):not(.aud-photos .tag):not(.neon-t):not(.mini-pill)::before{content:"";width:26px;height:1px;background:currentColor;display:inline-block;flex:none}
+.tag .dot{display:none}
+.hero-tags{gap:8px 28px}
+.insight .tag{position:static;margin-bottom:6px}
+
+/* =====================================================================
+   SECOES CLARAS (fundo branco alternado, como na referencia)
+   ===================================================================== */
+.panel.alt{
+  background:#fff;color:#021c39;
+  --ink-soft:rgba(2,28,57,.68);--ink-faint:rgba(2,28,57,.46);
+  --card:#eef3f9;--line:rgba(2,28,57,.12);
+  --kick:oklch(0.50 0.12 165);--neon:oklch(0.55 0.125 165);
+}
+.panel.alt .h2,.panel.alt .h3,.panel.alt h2,.panel.alt h3{color:#021c39}
+.panel.alt .p strong{color:#021c39}
+.panel.alt .btn-neon{background:oklch(0.80 0.135 165);color:#042319}
+
+/* cartoes claros */
+.panel.alt .ed,.panel.alt .feat div,.panel.alt .case .cc.w,.panel.alt .steps li,.panel.alt .faq details,.panel.alt .aud-tags span{color:#021c39;border-color:rgba(2,28,57,.12)}
+.panel.alt .ed .icb{background:rgba(2,28,57,.06)}
+.panel.alt .feat strong{color:#021c39}
+.panel.alt .aud-tags span.k{background:#043672;color:#fff;border-color:#043672}
+.panel.alt .aud-tags span.n{background:rgba(82,217,166,.22);border-color:rgba(31,157,115,.5);color:#021c39}
+.panel.alt .steps li .n{background:rgba(2,28,57,.07)}
+.panel.alt .steps li:last-child .n{background:oklch(0.80 0.135 165);color:#042319}
+.panel.alt .faq summary .round{background:#043672;color:#fff}
+.panel.alt .faq details[open] summary .round{background:oklch(0.80 0.135 165);color:#042319}
+.panel.alt .spc-new{background:rgba(82,217,166,.16);border-color:rgba(31,157,115,.5);color:#021c39}
+.panel.alt .case .cc.n{background:rgba(82,217,166,.16);border-color:rgba(31,157,115,.5);color:#021c39}
+.panel.alt .aud-photos .shot .tag{background:oklch(0.80 0.135 165);color:#042319}
+
+/* cartoes escuros dentro de secao branca */
+.panel.alt .ed.feature,.panel.alt .case .cc.d,.panel.alt .place-info{
+  background:#043672;border-color:transparent;color:#f4f1ea;
+  --ink-soft:#bacce6;--ink-faint:#88a1c5;--kick:oklch(0.80 0.135 165);--neon:oklch(0.80 0.135 165);--line:rgba(255,255,255,.16)}
+.panel.alt .ed.feature{background:#021c39}
+.panel.alt .ed.feature h3,.panel.alt .place-info h3,.panel.alt .place-info .h3{color:#fff}
+.panel.alt .ed.feature .icb{background:rgba(255,255,255,.08)}
+.panel.alt .case .cc.d p .m{color:#88a1c5}
+
+/* multiplicador: gradiente branco sobre a foto, bolhas claras */
+.panel.alt .mult-stage::before{background:linear-gradient(180deg,#fff 0%,rgba(255,255,255,.85) 18%,rgba(255,255,255,0) 52%)}
+.panel.alt .bubble{color:#021c39}
+.panel.alt .bubble.glass{background:rgba(255,255,255,.5);border-color:rgba(255,255,255,.75)}
+.panel.alt .bubble small{color:rgba(2,28,57,.58)}
+.panel.alt .bubble p{color:rgba(2,28,57,.75)}
+.panel.alt .bubble.neon-b{background:oklch(0.80 0.135 165);color:#042319}
+.panel.alt .bubble.neon-b small{color:rgba(4,35,25,.65)}
+.panel.alt .bubble.neon-b p{color:rgba(4,35,25,.8)}
+@media(max-width:900px){.panel.alt .mult-stage::before{background:linear-gradient(180deg,#fff 0%,rgba(255,255,255,.6) 40%,rgba(255,255,255,0) 75%)}}
+
+/* sintercast: cartoes flutuantes continuam escuros */
+.panel.alt .widget{--ink-soft:#bacce6;color:#fff}
+.panel.alt .widget small{color:#bacce6}
+.panel.alt .phone .ep,.panel.alt .phone{color:#fff}
+
+/* prints / galerias mantem legibilidade */
+.panel.alt .print{border-color:rgba(2,28,57,.12)}
+
+/* REVEAL-SCROLL: itens aparecem conforme a rolagem (classe aplicada via JS) */
+.rv{opacity:0;transform:translateY(34px);transition:opacity .85s cubic-bezier(.16,1,.3,1),transform .85s cubic-bezier(.16,1,.3,1);transition-delay:var(--d,0s);will-change:opacity,transform}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+/* PRINTS-CARROSSEL: rolagem horizontal dos depoimentos */
+.pr-track{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:none;overscroll-behavior-x:contain;scrollbar-width:none;margin-top:46px;padding:6px 2px 10px;cursor:grab;-webkit-overflow-scrolling:touch}
+.pr-track::-webkit-scrollbar{display:none}
+.pr-track.drag{cursor:grabbing;scroll-snap-type:none}
+.pr-track .print{flex:none;width:min(400px,84vw);margin:0;scroll-snap-align:start;break-inside:auto;align-self:flex-start}
+.pr-track .print img{pointer-events:none;-webkit-user-drag:none;user-select:none}
+.panel.alt .car-nav .round{background:#043672;color:#fff}
+/* print de conversa do WhatsApp (imagem enviada pelo cliente) */
+.pr-track .print.wa{padding:0;background:#0b141a;border-color:transparent;border-radius:18px}
+/* FONTE-DESTAQUE: mesma fonte de titulo do Sintercast nas cotas (nome e preco) */
+.pod-title,.detail .dn,.plan b,.plan .pr,.detail .dp b,.pay .big,.goal b,.bigstat b{font-family:"Hanken Grotesk",system-ui,sans-serif;font-weight:800;letter-spacing:-.035em;font-variant-numeric:lining-nums tabular-nums}
+.detail .dn{font-size:clamp(46px,5.4vw,76px);line-height:.95}
+.plan b{font-size:20px;letter-spacing:-.02em}
+.plan .pr{font-size:clamp(22px,2.2vw,28px)}
+.detail .dp b{font-size:clamp(36px,3.8vw,50px)}
+/* CANTOS-RETOS: botoes e badges com cantos suaves (nao arredondados em pilula) */
+:root{--r-pill:10px}
+.btn,.nav .btn,.chip-f,.mini-pill,.plan .badge,.tag.neon-t,.shot .tag,.sp-item .tag,.cb-item .tag,.crowd .tag,.aud-photos .shot .tag,.aud-tags span,.wants div,.cta-strip,.statement,.sp.new,.steps li,.compare thead th.d{border-radius:10px}
+.cta-strip,.steps li,.wants div{border-radius:12px}
+.round,.faq summary .round,.car-nav .round,.pv-sound,.short .playb{border-radius:12px}
+.fab{border-radius:16px}
+.steps li .n{border-radius:10px}
+.cb-fact .icb,.ed .icb{border-radius:10px}
+.sp .av{border-radius:12px}
+/* FLUTUAR: cartoes do Sintercast ficam flutuando */
+@keyframes flutuar{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+.float{animation:flutuar 5s ease-in-out infinite;will-change:transform}
+.float.f2{animation-duration:6s;animation-delay:-2s}
+.float.f3{animation-duration:5.5s;animation-delay:-3.5s}
+.panel.alt .widget .neon{color:oklch(0.80 0.135 165)}
+@media(prefers-reduced-motion:reduce){.float{animation:none}}
+/* SINTERCAST-TITULO: SINTER + CAST em bloco verde, fonte do site */
+.pod-title{text-transform:uppercase;letter-spacing:-.02em;line-height:1;font-size:clamp(48px,6.6vw,96px)}
+.pod-title .neon,.panel.alt .pod-title .neon{background:#0a4d8f;color:#fff;border-radius:12px;padding:.02em .14em .06em;display:inline-block;margin-left:.03em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+/* TITULOS-BEBAS: fonte da referencia (Bebas Neue, caixa alta) no Sintercast e nas cotas */
+.pod-title,.detail .dn,.detail .dp b,.plan b,.plan .pr{font-family:"Bebas Neue",Impact,"Arial Narrow",sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:.01em;font-variant-numeric:normal}
+.pod-title{font-size:clamp(56px,7.4vw,112px);line-height:.9;letter-spacing:.005em;white-space:nowrap}
+.pod-title .neon,.panel.alt .pod-title .neon{padding:0 .1em .02em;border-radius:14px;line-height:.9}
+.detail .dn{font-size:clamp(64px,7vw,96px);line-height:.88}
+.detail .dp b{font-size:clamp(44px,4.6vw,62px);line-height:1;letter-spacing:.02em}
+.plan b{font-size:26px;line-height:1}
+.plan .pr{font-size:clamp(28px,2.8vw,36px);letter-spacing:.02em}
+.pv-bottom b{font-family:"Bebas Neue",Impact,sans-serif;font-weight:400;text-transform:uppercase;font-size:38px;letter-spacing:.02em}
+/* RESPIRO-CARDS: mais espaco interno e entre os cartoes */
+.ed{padding:clamp(26px,2.6vw,36px)}
+.pain-card{padding:clamp(28px,3vw,42px)}
+.insight{padding:clamp(26px,2.6vw,36px) clamp(26px,2.8vw,40px)}
+.phase{padding:clamp(26px,2.8vw,38px)}
+.case .cc{padding:clamp(26px,2.6vw,36px)}
+.cb-fact{padding:clamp(24px,2.4vw,32px) clamp(24px,2.6vw,34px);gap:20px}
+.feat div{padding:clamp(20px,2vw,28px) clamp(22px,2.2vw,30px);gap:18px}
+.sp{padding:22px 26px}
+.place-info{padding:clamp(28px,3vw,42px)}
+.pay,.custom{padding:clamp(28px,3vw,40px)}
+.drawer{padding:clamp(22px,3.4vw,44px);gap:clamp(20px,3.4vw,44px)}
+.detail{padding:clamp(28px,3.4vw,46px)}
+.plan{padding:22px 26px}
+.diamond-only{padding:clamp(28px,3.4vw,48px)}
+.do-grid div{padding:22px}
+.team .txt{padding:clamp(32px,4.4vw,64px)}
+.goal{padding:26px 30px}
+.statement{padding:22px 30px}
+.wants div{padding:20px 26px}
+.cta-strip{padding:14px 14px 14px 34px}
+.steps li{padding:14px 30px 14px 14px}
+.faq summary{padding:24px 28px 24px 30px}
+.faq details p{padding:0 30px 26px}
+.compare-wrap{padding:clamp(20px,2.6vw,34px)}
+.print{padding:22px 18px 14px}
+.spc-new{padding:26px}
+.aud-tags span{padding:12px 20px}
+.quote-card{padding:32px 34px}
+.ed-grid,.phases,.pain,.wants,.case,.cb-facts,.extras,.place,.team,.pay-col,.steps,.faq,.feat,.insights,.do-grid,.spk-grid,.gallery,.collat,.crowd{gap:16px}
+.aud-tags{gap:10px}
+@media(max-width:640px){
+  .ed,.pain-card,.insight,.phase,.case .cc,.place-info,.pay,.custom,.diamond-only{padding:24px}
+  .inc-grid{gap:12px!important}
+  .drawer{padding:16px}
+}
+@media(max-width:900px){body{padding:0}.panel{border-radius:0;margin:0}}
+@media(max-width:640px){.panel{padding:64px 20px}.hero{padding:112px 20px 56px}.nav{padding:12px 20px}.nav-cta{display:none!important}.nav-links{display:none}}
 </style>
 </head>
 <body>
@@ -667,29 +1017,31 @@ table.compare{width:100%;min-width:820px;border-collapse:separate;border-spacing
     <!-- Para vídeo no fundo, troque a <img> por: <video src="video.mp4" autoplay muted loop playsinline></video> -->
     <img src="img/pub_3815.jpg" alt="Congressistas de braços para cima no auditório lotado da 2ª Jornada, em Cuiabá" fetchpriority="high">
   </div>
-  <header class="nav">
-    <a class="brand" href="#inicio" aria-label="SINTER-MT, início"><img src="img/embed_2.png" alt="" width="42" height="42">SINTER-MT</a>
+  <header class="nav site-header">
+    <a class="brand" href="#inicio" aria-label="SINTER-MT, início"><img class="brand__mark" src="img/embed_2.png" alt="" width="46" height="46"><span class="brand__txt"><b>SINTER&nbsp;MT</b><span>3ª Jornada · Abril 2027</span></span></a>
     <nav class="nav-links" aria-label="Seções">
       <a href="#inclui">Proposta</a>
       <a href="#numeros">Números</a>
       <a href="#experiencia">2ª Jornada</a>
       <a href="#depoimentos">Depoimentos</a>
       <a href="#cotas">Cotas</a>
+      <a href="#duvidas">FAQ</a>
     </nav>
     <a class="btn btn-neon nav-cta" href="#cotas">Patrocinar<span class="arr"><svg class="ic"><use href="#i-arr"/></svg></span></a>
   </header>
 
   <div class="hero-widgets" aria-hidden="true">
-    <div class="widget"><div><small>Próxima edição</small><b>600 congressistas esperados</b></div><span class="mini-pill">3ª edição</span></div>
+    <div class="widget"><div><small>Próxima edição · Abril de 2027</small><b>600 congressistas esperados</b></div><span class="mini-pill">3ª edição</span></div>
     <div class="widget" style="display:block"><small>2ª edição</small><b>370 congressistas e 29 expositores</b><div class="bar"><i style="width:62%"></i></div></div>
     <div class="widget"><div><small>Local</small><b>Centro de Eventos Pantanal</b></div></div>
   </div>
 
   <div class="hero-body">
     <div class="hero-tags">
+      <span class="kicker">Vem aí a 3ª Jornada · Abril de 2027</span>
       <span class="tag"><span class="dot"></span>Proposta comercial</span>
       
-      <span class="tag">Abril de 2027</span>
+      
       <span class="tag">Cuiabá, MT</span>
     </div>
     <h1 class="h1">
@@ -746,7 +1098,7 @@ table.compare{width:100%;min-width:820px;border-collapse:separate;border-spacing
 </section>
 
 <!-- 3. O QUE ESTÁ INCLUSO -->
-<section class="panel light" id="inclui">
+<section class="panel alt" id="inclui">
   <div class="inner">
     <div class="ed-head">
       <div>
@@ -769,7 +1121,7 @@ table.compare{width:100%;min-width:820px;border-collapse:separate;border-spacing
 </section>
 
 <!-- 2. NÚMEROS + INSIGHTS -->
-<section class="panel deep" id="numeros">
+<section class="panel navy" id="numeros">
   <div class="inner research">
     <div>
       <span class="tag">O que a 2ª Jornada mostrou</span>
@@ -808,7 +1160,7 @@ table.compare{width:100%;min-width:820px;border-collapse:separate;border-spacing
 </section>
 
 <!-- 3. MULTIPLICADOR -->
-<section class="panel light" id="multiplicador">
+<section class="panel alt" id="multiplicador">
   <div class="inner">
     <div class="mult-head">
       <img src="img/embed_3.png" alt="" width="40" height="40" style="width:40px;height:40px;margin:0 auto 18px;object-fit:contain">
@@ -865,7 +1217,7 @@ table.compare{width:100%;min-width:820px;border-collapse:separate;border-spacing
 </section>
 
 <!-- 10. PÚBLICO -->
-<section class="panel light" id="publico">
+<section class="panel alt" id="publico">
   <div class="inner aud">
     <div>
       <span class="tag">Quem você vai encontrar</span>
@@ -901,7 +1253,7 @@ table.compare{width:100%;min-width:820px;border-collapse:separate;border-spacing
 </section>
 
 <!-- 4. COMO FOI (estilo case) -->
-<section class="panel light" id="experiencia">
+<section class="panel alt" id="experiencia">
   <div class="inner">
     <div class="row" style="align-items:flex-end">
       <div>
@@ -967,7 +1319,7 @@ table.compare{width:100%;min-width:820px;border-collapse:separate;border-spacing
 </section>
 
 <!-- 5. SINTERCAST -->
-<section class="panel light" id="sintercast">
+<section class="panel alt" id="sintercast">
   <div class="inner pod">
     <div class="phone-wrap">
       <div class="phone">
@@ -1047,7 +1399,7 @@ table.compare{width:100%;min-width:820px;border-collapse:separate;border-spacing
 </section>
 
 <!-- 11. PALESTRANTES -->
-<section class="panel light" id="palestrantes">
+<section class="panel alt" id="palestrantes">
   <div class="inner">
     <div class="row" style="align-items:flex-end">
       <div>
@@ -1077,7 +1429,7 @@ table.compare{width:100%;min-width:820px;border-collapse:separate;border-spacing
 </section>
 
 <!-- 7. DEPOIMENTOS -->
-<section class="panel deep" id="depoimentos">
+<section class="panel navy" id="depoimentos">
   <div class="inner">
     <div class="bigquote">
       <span class="tag" style="justify-self:start">Quem esteve lá conta</span>
@@ -1092,28 +1444,34 @@ table.compare{width:100%;min-width:820px;border-collapse:separate;border-spacing
 </section>
 
 <!-- 13. PRINTS -->
-<section class="panel light" id="elogios">
+<section class="panel alt" id="elogios">
   <div class="inner">
     <div class="row" style="align-items:flex-end">
       <div>
         <span class="tag">Vocês falam</span>
         <h2 class="h2" style="margin-top:22px">O que ficou <span class="hl">depois</span> <span class="m">da Jornada.</span></h2>
       </div>
-      <p class="p">Comentários reais deixados no Instagram do SINTER-MT por quem participou da 2ª edição.</p>
+      <p class="p">Mensagens e comentários reais de quem participou da 2ª edição. Role o mouse sobre os prints ou arraste para o lado para ver mais.</p>
     </div>
-    <!-- PRINTS: para acrescentar, copie uma linha <figure class="print"> e troque a imagem -->
-    <div class="prints">
+    <!-- PRINTS: para acrescentar prints do WhatsApp, coloque as imagens em img/whatsapp/ e liste no array WHATSAPP_PRINTS no fim da pagina -->
+    <div class="car-wrap">
+    <div class="pr-track" id="prTrack" tabindex="0" aria-label="Prints de depoimentos">
       <figure class="print"><img src="img/embed_5.jpg" alt="Comentário de @valquiriaoficial no Instagram do SINTER-MT elogiando a 2ª Jornada"></figure>
       <figure class="print"><img src="img/embed_6.jpg" alt="Comentário de @thtcterapiaoficial no Instagram do SINTER-MT elogiando a 2ª Jornada"></figure>
       <figure class="print"><img src="img/embed_7.jpg" alt="Comentário de @lucirodriguesterapeuta no Instagram do SINTER-MT elogiando a 2ª Jornada"></figure>
       <figure class="print"><img src="img/embed_8.jpg" alt="Comentário de @wyl_terapeutafitofloral no Instagram do SINTER-MT elogiando a 2ª Jornada"></figure>
       <figure class="print"><img src="img/embed_9.jpg" alt="Comentário de @gilvanice_soaress no Instagram do SINTER-MT elogiando a 2ª Jornada"></figure>
     </div>
+    <div class="car-nav">
+      <button type="button" class="round" data-pr="-1" aria-label="Prints anteriores"><svg class="ic" style="transform:rotate(180deg)"><use href="#i-arr"/></svg></button>
+      <button type="button" class="round" data-pr="1" aria-label="Próximos prints"><svg class="ic"><use href="#i-arr"/></svg></button>
+    </div>
+    </div>
   </div>
 </section>
 
 <!-- 12. COTAS -->
-<section class="panel deep" id="cotas">
+<section class="panel navy" id="cotas">
   <div class="inner">
     <div class="plans-top">
       <span class="tag">Expositores e patrocinadores</span>
@@ -1181,7 +1539,7 @@ table.compare{width:100%;min-width:820px;border-collapse:separate;border-spacing
 </section>
 
 <!-- 15. LOCAL E PASSOS -->
-<section class="panel light" id="local">
+<section class="panel alt" id="local">
   <div class="inner">
     <span class="tag">Como participar</span>
     <h2 class="h2" style="margin-top:22px;max-width:16ch">Três passos para garantir o <span class="neon">seu espaço.</span></h2>
@@ -1207,7 +1565,7 @@ table.compare{width:100%;min-width:820px;border-collapse:separate;border-spacing
 <section class="panel dark" id="diretoria" style="padding:10px">
   <div class="team">
     <div class="photo"><img src="img/dir_4517.jpg" alt="Diretoria do SINTER-MT, gestão 2026 a 2029, no palco da 2ª Jornada" style="object-position:center 38%;transform:scale(1.22);transform-origin:50% 43%"></div>
-    <div class="txt light">
+    <div class="txt">
       <div class="team-years years"><span class="tag">Quem realiza</span><span class="tag">Gestão 2026 a 2029</span></div>
       <div>
         <h2 class="h2">Diretoria <span class="m">do</span> SINTER.</h2>
@@ -1222,7 +1580,7 @@ table.compare{width:100%;min-width:820px;border-collapse:separate;border-spacing
 </section>
 
 <!-- 16. FAQ -->
-<section class="panel light" id="duvidas">
+<section class="panel alt" id="duvidas">
   <div class="inner faq-wrap">
     <div>
       <span class="tag">Dúvidas frequentes</span>
@@ -1415,6 +1773,66 @@ document.querySelectorAll(".chip-f").forEach(b => b.addEventListener("click", ()
   const f = b.dataset.f;
   document.querySelectorAll("#spGrid .sp-item").forEach(it => { it.hidden = !(f === "all" || it.dataset.cat === f); });
 }));
+window.addEventListener('scroll',function(){var n=document.querySelector('.nav');if(n)n.classList.toggle('scrolled',window.scrollY>30)},{passive:true});
+</script>
+<script>
+/* REVEAL-SCROLL: cartoes, fotos e blocos surgem ao rolar a pagina */
+(function(){
+  if(!("IntersectionObserver" in window) || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  var sel=[".panel:not(.hero) .row>*",".ed-head>*",".plans-top",".mult-head",".mult-stage",".pain-card",".wants>div",".bigstat",".goal",".insight",".statement",".phase",".aud>div>.p",".aud-photos .shot",".aud-tags",".crowd>figure",".case>*",".gallery .shot",".cb-fact",".cb-track",".pod>div",".pod-shots .shot",".filters",".sp-item",".cta-strip",".spc",".spc-new",".bigquote",".short",".print",".drawer",".compare-wrap",".diamond-only",".pay",".custom",".place>*",".steps li",".team>*",".faq-wrap>div:first-child",".faq details",".ed",".feat div",".huge",".foot-links"].join(",");
+  var els=[].slice.call(document.querySelectorAll(sel));
+  var seen=new Set();
+  els=els.filter(function(e){ if(seen.has(e)||e.closest(".hero")) return false; seen.add(e); return true; });
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(!e.isIntersecting) return;
+      var t=e.target; io.unobserve(t);
+      t.classList.add("in");
+      setTimeout(function(){ t.classList.remove("rv","in"); t.style.removeProperty("--d"); },1100);
+    });
+  },{threshold:.08,rootMargin:"0px 0px -6% 0px"});
+  els.forEach(function(e){
+    var sibs=e.parentElement?[].slice.call(e.parentElement.children):[e];
+    var i=Math.max(0,sibs.indexOf(e))%6;
+    e.style.setProperty("--d",(i*0.07).toFixed(2)+"s");
+    e.classList.add("rv");
+    io.observe(e);
+  });
+})();
+</script>
+<script>
+/* PRINTS-CARROSSEL: prints de WhatsApp + rolagem horizontal (setas, arrastar e teclado) */
+/* Para adicionar prints do WhatsApp: salve as imagens em img/whatsapp/ e liste abaixo, ex.: { src: "img/whatsapp/print-01.jpg", alt: "Mensagem de ..." } */
+var WHATSAPP_PRINTS = [];
+(function(){
+  var track = document.getElementById("prTrack"); if(!track) return;
+  WHATSAPP_PRINTS.forEach(function(w){
+    var f = document.createElement("figure"); f.className = "print wa";
+    var i = document.createElement("img"); i.src = w.src; i.alt = w.alt || "Mensagem de WhatsApp de participante da 2ª Jornada"; i.loading = "lazy";
+    f.appendChild(i); track.insertBefore(f, track.firstChild);
+  });
+  document.querySelectorAll("[data-pr]").forEach(function(b){
+    b.addEventListener("click", function(){ var m=track.scrollWidth-track.clientWidth; target=Math.max(0,Math.min(m,track.scrollLeft+ +b.dataset.pr*track.clientWidth*.8)); if(!raf) raf=requestAnimationFrame(loop); });
+  });
+  var down=false, sx=0, sl=0, moved=false;
+  track.addEventListener("pointerdown", function(e){ if(e.pointerType==="touch") return; down=true; moved=false; sx=e.clientX; sl=track.scrollLeft; track.classList.add("drag"); });
+  window.addEventListener("pointermove", function(e){ if(!down) return; var dx=e.clientX-sx; if(Math.abs(dx)>3) moved=true; track.scrollLeft=sl-dx; });
+  window.addEventListener("pointerup", function(){ if(!down) return; down=false; track.classList.remove("drag"); });
+  /* roda do mouse sobre o carrossel move os prints para o lado; nas pontas a pagina volta a rolar */
+  var target=track.scrollLeft, raf=0;
+  function loop(){ var d=target-track.scrollLeft; if(Math.abs(d)<.5){ track.scrollLeft=target; raf=0; return; } track.scrollLeft+=d*.18; raf=requestAnimationFrame(loop); }
+  track.addEventListener("scroll", function(){ if(!raf) target=track.scrollLeft; }, {passive:true});
+  track.addEventListener("wheel", function(e){
+    if(Math.abs(e.deltaX)>Math.abs(e.deltaY)) return;
+    var max=track.scrollWidth-track.clientWidth; if(max<=0) return;
+    var cur=raf?target:track.scrollLeft;
+    if((e.deltaY<0 && cur<=0) || (e.deltaY>0 && cur>=max-1)) return;
+    e.preventDefault();
+    target=Math.max(0,Math.min(max,cur+e.deltaY*(e.deltaMode===1?32:1.1)));
+    if(!raf) raf=requestAnimationFrame(loop);
+  }, {passive:false});
+  track.addEventListener("keydown", function(e){ if(e.key==="ArrowRight") track.scrollBy({left:track.clientWidth*.6,behavior:"smooth"}); if(e.key==="ArrowLeft") track.scrollBy({left:-track.clientWidth*.6,behavior:"smooth"}); });
+})();
 </script>
 </body>
 </html>
