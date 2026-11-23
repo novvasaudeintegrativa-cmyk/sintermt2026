@@ -1,9 +1,10 @@
-# Arquivos de design pesados (nao versionar)
+# Arquivos de design pesados (nao versionar) - ancorados na raiz do projeto
 *.psd
 *.psb
 *.ai
-*.pdf
-Font/
-Imgs/
-Referencias/
-Videos/
+/PDFs/
+/Artes/
+/Font/
+/Imgs/
+/Referencias/
+/Videos/
