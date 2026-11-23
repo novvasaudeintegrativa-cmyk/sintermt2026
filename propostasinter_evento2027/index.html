@@ -1025,6 +1025,10 @@ body{background:var(--paper);color:#f4f1ea;font-size:18px;line-height:1.65;paddi
 .panel.final .foot-links nav{justify-content:center;text-align:center}
 .panel.final .final-copy{display:flex;justify-content:center}
 .panel.final .final-copy p{width:100%;text-align:center;margin:0 auto}
+/* COPYRIGHT-VERDE: mais respiro no topo, texto verde e linha curta acima */
+.panel.final .final-copy{padding-top:44px;padding-bottom:36px}
+.panel.final .final-copy p{color:var(--neon);font-weight:600}
+.panel.final .final-copy p::before{content:"";display:block;width:56px;height:2px;border-radius:2px;background:var(--neon);margin:0 auto 20px}
 @media(max-width:900px){body{padding:0}.panel{border-radius:0;margin:0}}
 @media(max-width:640px){.panel{padding:64px 20px}.hero{padding:112px 20px 56px}.nav{padding:12px 20px}.nav-cta{display:none!important}.nav-links{display:none}}
 </style>
