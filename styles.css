@@ -875,3 +875,13 @@ h2, .sec-head h2, .final h2 {
 @media (max-width: 640px) {
   h2, .sec-head h2, .final h2 { font-size: clamp(38px, 11.5vw, 54px) !important; }
 }
+
+/* SPEAKER-PH: cards de exemplo "Palestrante aqui" (sem foto ate confirmar) */
+.speaker--ph .speaker__photo {
+  display: grid; place-items: center; align-content: center; gap: 12px;
+  background: repeating-linear-gradient(135deg, rgba(255,255,255,.05) 0 10px, transparent 10px 20px), var(--navy-700);
+  border: 1px dashed var(--line);
+  color: var(--gold);
+}
+.speaker--ph .speaker__photo svg { width: 38%; height: auto; }
+.speaker--ph .speaker__photo span { font-family: var(--mono); font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: #fff; }
