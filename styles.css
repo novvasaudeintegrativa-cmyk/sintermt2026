@@ -911,10 +911,10 @@ h2 .verde { color: var(--gold); }
 /* HERO-BRAND: sem header; logo ao lado do nome do evento, separados por linha vertical branca */
 .hero { padding-top: clamp(56px, 6vw, 84px); }
 .hero__brand { display: inline-flex; align-items: center; gap: 22px; max-width: 100%; }
-.hero__brand-logo { width: 68px; height: 68px; object-fit: contain; flex: none; background: #fff; border-radius: 50%; padding: 5px; }
+.hero__brand-logo { box-sizing: border-box; width: 124px; height: 124px; object-fit: contain; flex: none; padding: 14px; background: radial-gradient(circle at 50% 50%, rgba(255,255,255,.55) 0%, rgba(255,255,255,.2) 45%, rgba(255,255,255,0) 72%); filter: drop-shadow(0 0 12px rgba(255,255,255,.85)); }
 .hero__brand-line { width: 1px; align-self: stretch; min-height: 48px; background: #fff; flex: none; }
 .hero__brand-name { font-family: var(--mono); font-size: 12.5px; letter-spacing: .22em; text-transform: uppercase; font-weight: 500; color: var(--gold); text-align: left; line-height: 1.6; }
-@media (max-width: 640px) { .hero__brand { gap: 14px; } .hero__brand-logo { width: 48px; height: 48px; } .hero__brand-name { font-size: 11px; letter-spacing: .16em; } }
+@media (max-width: 640px) { .hero__brand { gap: 14px; } .hero__brand-logo { width: 88px; height: 88px; padding: 10px; } .hero__brand-name { font-size: 11px; letter-spacing: .16em; } }
 
 /* CANTOS-RETOS: botoes e badges com cantos suaves (10px), nunca em pilula - mesma ideia da proposta */
 .btn, .btn--lg, .btn--gold, .btn--navy, .btn--ghost, .btn--ghost-light, .btn--disabled { border-radius: 10px; }
